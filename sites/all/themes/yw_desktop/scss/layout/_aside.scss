@@ -1,0 +1,25 @@
+// Non-modular or client styles for asides or sidebars.
+
+.l-sidebar-first {
+	h2 {
+		font-size: 1.5em;
+	}
+}
+
+.push-3 {
+	@media #{$small} { 
+		border-left: 2px solid $YW_Aqua;
+		padding-left: $YW_BasePaddingLarge;
+	}
+
+}
+.large-3.pull-9.l-sidebar-first.columns.sidebar{
+	border-top: 2px solid $YW_Aqua;
+	padding-top: $YW_BasePaddingLarge;
+		@media #{$small} { 
+			border-top:none;
+			padding-top: 0px;
+			width:22%;
+			margin-right: $YW_BasePaddingLarge;
+		}
+}

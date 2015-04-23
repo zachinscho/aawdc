@@ -1,0 +1,79 @@
+.hideRendered {
+	display:none;
+}
+
+.page {
+	background: url('../images/YW_secondary.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+
+.breadcrumbs {
+    padding: $YW_BasePaddingLarge;
+    margin-left: 0px;
+    border-style: none;
+    border-width: 0px;
+    background-color: $YW_Aqua_Sub;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+	    a {
+		    color: $YW_White;
+	    }
+}
+
+// grid out some views
+.view-id-partners, .view-id-staff, .view-id-success_stories, .view-id-essential_skills, .view-id-occupations, .view-id-resources {
+.view-content ul {
+margin:0px;
+	@include block-grid(1);
+	@media #{$small} { 
+		@include block-grid(2);
+	}
+	@media #{$medium} { 
+		@include block-grid(3);
+	}
+
+	li {
+		margin: 0px;
+		padding: $YW_BasePaddingLarge;
+	}
+}
+
+	.views-row {
+		img {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+// success stories
+.node-type-success-story {
+	img {
+		float:left;
+		margin-right: $YW_BasePadding;
+		margin-bottom: $YW_BasePadding;
+	}
+}
+
+//registration
+.field-type-registration {
+	a {
+		@extend .button;
+	}
+}
+
+.field-type-video-embed-field {
+	padding: $YW_BasePaddingLarge;
+	margin-bottom:$YW_BasePadding;
+	background: url('../images/YW_secondary.png');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+
+//Occupation overide styling for salary field
+.field-name-field-typical-salary-range {
+	margin-bottom: 1.25em;
+}

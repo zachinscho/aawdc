@@ -1,0 +1,6 @@
+/* This file is only a placeholder. See the STARTER/README.txt file regarding
+ * "CHANGING FOUNDATION DEFAULT SETTINGS" for documentation
+ */
+// reset the top bar media query for our large menu
+$topbar-breakpoint:1100px; // Change to 9999px for always mobile layout
+$topbar-media-query: "only screen and (min-width: #{$topbar-breakpoint})" !default;

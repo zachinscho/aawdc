@@ -1,0 +1,56 @@
+// Non-modular or client styles for the .l-content region.
+#frontPageTop {
+display: block;
+	background-color: $YW_Gold;
+	height:90vh;
+	position:relative;
+	}
+
+#frontPageBtm {
+	background-color: $YW_Aqua;
+	height:110vh;
+}
+
+.introText{
+	height:80vh;
+	}
+	.introScroll{
+	height:10vh;
+	text-align: center;
+	a {
+		color:$YW_White;
+		height:10vh;
+		width: 100%;
+		display:block;
+		span {
+			background-color: $YW_Black;
+		}
+	}
+
+	}
+
+
+// main page
+
+.column,
+.columns {
+  
+  padding-left: 0;
+  padding-right: 0;
+
+}
+
+	.l-main {
+		
+		padding:20px;
+		@media #{$medium} { 
+		padding: $YW_BasePadding;
+	}
+	}
+
+.node {
+	
+}
+.body {}
+.image {}
+.breadcrumb {}

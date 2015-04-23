@@ -1,0 +1,54 @@
+// Non-modular or client styles for .l-footer region.
+
+.l-footer {
+	background-color: $YW_Trans_Blk;
+	margin-bottom: 0px;
+	border:none;
+	color: $YW_White;
+		p {
+		color: $YW_White;
+		margin: 0px;
+		padding: 0px;	
+		}
+		a {
+			color: $YW_White;
+		}
+		.copyright {
+			font-size: .7em;
+			font-style: italic;
+		}	
+	
+}
+
+.socialFooter {
+	width:100%;
+	height: 45px;
+		@media #{$small} {
+			background: url('../images/footer_tri.png');
+			background-size: contain;
+			height: 200px;
+			width:200px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+	.footerInner {
+		@media #{$small} {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				padding-right: 10px;
+				padding-bottom: 10px;
+		}
+	a {
+		display: block;
+		float:right;
+		font-size: 40px;
+		color: $YW_White;
+		margin-left: $YW_BasePadding;
+			&:hover {
+				color: darken($YW_White, 20);
+			}
+		}
+	}
+}

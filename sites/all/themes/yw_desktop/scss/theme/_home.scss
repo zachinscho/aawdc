@@ -1,0 +1,243 @@
+// Homepage specific. DR to control
+//begin front specific wrapper
+.front {
+	.homeInner {
+		max-width: $row-width;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 50px;
+		clear: both;
+	
+		
+	}
+	
+	.frontRow {
+
+	overflow:auto;
+		background-repeat: repeat-x;
+		background-position: left bottom;
+		// padding-bottom: $YW_BasePaddingLarge;
+				i.main {
+			color: $YW_Red;
+			
+			font-size: 3em;
+						@media #{$medium} {
+							font-size: 4em;
+							}
+			float: left;
+			margin-right: 10px;
+			display: block;
+		}
+	}
+	
+	@mixin linear-gradient($toColor) {
+		$fromColor: lighten($toColor, 5);
+		background-color: $toColor; /* Fallback Color */
+		background-image: url('../images/lines.png'), -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+		background-image: url('../images/lines.png'),  -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+		background-image: url('../images/lines.png'),  -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+		background-image: url('../images/lines.png'),   -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+		background-image:  url('../images/lines.png'),    -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+		background-image:  url('../images/lines.png'),       linear-gradient(top, $fromColor, $toColor);
+		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+	}
+	
+	.edges {
+				padding-top: 50px; 
+	padding-bottom: 50px;
+		@media #{$small} {
+		padding-top: 100px; 
+	padding-bottom: 100px;
+	}
+		background: url('../images/corner.png'), url('../images/corner2.png');
+		background-position: left top, right bottom;
+		background-repeat: no-repeat, no-repeat;
+	}
+	
+	.boxer {
+		p {
+		font-size: 1.5em;
+		margin-bottom: 0px;
+		}
+		background-color: $YW_White;
+		border-radius: $global-radius;
+		overflow: hidden;
+		margin-left: 10px;
+		margin-right: 10px;
+		@media #{$small} {
+		margin-left: 30px;
+		margin-right: 30px;
+		}
+		@extend .shadow;
+		.posted {
+			display:none;
+		}
+		.views-field-body, .field-name-body, .poll {
+			padding: $YW_BasePaddingLarge;
+		}
+	}
+	
+		.imageHero {
+		//background-color: $YW_Grey;
+		height:600px;
+		background: url('../images/slider_1.png');
+		background-size: cover;
+		background-position: center center;
+		overflow: auto;
+		// center circle
+		.centerText {
+		display: block;
+		border-radius: 50%;
+		padding-top:50px;
+		overflow: hidden;
+			background-color: $YW_Trans_Blk;
+			color: $YW_White;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			width:300px;
+			height: 300px;
+			@media #{$medium} {
+			width:400px;
+			height: 400px;
+			padding-top:100px;
+			}
+			@extend .transitionsLink;
+			
+			&:hover {
+				background-color: $YW_Black;
+			}
+			h1 {
+			font-weight: 400;
+			margin-top: 0px;
+			margin-bottom: 0px;
+				color: $YW_White;
+				text-transform: none;
+			}
+			h3 {
+			margin-top: 0px;
+				text-transform: none;
+				background: none;
+			}
+			i {
+				font-size: 2em;
+			}
+		}
+	}
+	
+	.routes {
+		@include linear-gradient($YW_Aqua_Sub);
+		.view-id-routes_to_employment {
+			margin-left: 10px;
+		margin-right: 10px;
+			@media #{$small} {
+			margin-left: 30px;
+		margin-right: 30px;
+		}
+			background-color: $YW_Trans_Blk;
+			border-radius: $global-radius;
+		overflow: hidden;
+		@extend .shadow;
+			padding: $YW_BasePaddingLarge;
+			padding-left: 40px;
+			padding-right: 40px;
+			background-image: url('../images/YW_secondary.png');
+			background-position: center center;
+			.view-content ul {
+			margin:0px;
+				@include block-grid(1);
+				@media #{$small} { 
+					@include block-grid(2);
+				}
+			
+				li {
+					margin: 0px;
+					padding: 0px;
+				}
+				a {
+						color: $YW_White;
+						display: block;
+						&:hover {
+							color: $YW_Red;
+							h4 {
+								color: $YW_Red;
+							}
+						}
+					}
+					i {
+						font-size: 60px;
+						//margin-top: 10px;
+						float: left;
+						margin-right: $YW_BasePadding;
+						
+					}
+
+				h4 {
+					font-size: 1.2em;
+					padding-top: 20px;
+					line-height: 1em;
+					color: $YW_White;
+					}
+			}
+
+		}
+	}
+	.successStors {
+		@include linear-gradient($YW_Blue_Sub);
+		img {
+			float:right;
+			margin-left: 30px;
+		}
+		}
+	.announcements {
+		@include linear-gradient($YW_Aqua_Sub);
+	}
+
+	.polls {
+		@include linear-gradient($YW_Blue_Sub);
+		
+	}
+	.poll {
+		@media #{$small} {
+		padding-right: $YW_BasePadding;
+		}
+		h1 {
+			display:none;
+		}
+		
+	}
+	.know {
+		@media #{$small} {
+		padding-left: $YW_BasePadding;
+		}
+		
+	}
+	
+	
+	//homepage specific type
+	h1 {
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	
+
+	
+	h2, h3 {
+			font-size: 1.5em;
+			margin-top: 0px;
+			color: $YW_White;
+			background-color: $YW_Red;
+			padding: $YW_BasePadding;
+			a {
+				color: $YW_White;
+			}
+	}
+	
+	.button {
+		margin-left: $YW_BasePaddingLarge;
+	}
+	.node-advpoll p {
+		margin-bottom: 0px;
+	}
+//end front specific wrapper
+}

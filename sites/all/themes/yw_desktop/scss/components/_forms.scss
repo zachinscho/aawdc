@@ -1,0 +1,30 @@
+// Docs: http://foundation.zurb.com/docs/components/forms.html
+
+// Drupal specific classes
+// ----------------------------------------------------------------------------
+.form-text {}
+.form-submit {}
+
+label {
+	font-weight: 700;
+	font-size: 1em;
+}
+
+.form-managed-file .form-submit {
+		margin-top: $YW_BasePadding;
+		margin-bottom: $YW_BasePadding;
+		}
+
+#views-exposed-form-success-stories-block .views-exposed-form .views-exposed-widget .form-submit {
+	margin-top: 0px;
+	@extend .small;
+}
+
+input[type=checkbox] {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.form-checkboxes .form-item {
+	margin-bottom: 0px;
+	margin-top: 0px;
+}

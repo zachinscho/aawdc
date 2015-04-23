@@ -1,0 +1,37 @@
+// Docs: http://foundation.zurb.com/docs/components/buttons.html
+//
+// Before adding styles be sure to modify variables in the
+// "scss/_variables.scss" file.
+
+.button, .form-submit {
+	background-color: $YW_Gold;
+	font-size: 1.5em;
+	color: $YW_Grey;
+	font-weight: 400;
+	border-radius: $global-radius;
+	text-transform: capitalize;
+	padding-top: $YW_BasePadding;
+	padding-bottom: $YW_BasePadding;
+	&:hover {
+		background-color: darken($YW_Gold, 4);
+		color: $YW_Black;
+	}
+	
+}
+// reset margin
+button {
+		margin-bottom: 0px;
+	}
+	
+	.button-group {
+.button.secondary {
+	
+	margin-right: 5px;
+}	
+}
+.button.secondary {
+	color: $YW_Grey;
+	&:hover {
+		color: $YW_Black;
+	}
+	}

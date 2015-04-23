@@ -1,0 +1,28 @@
+// Non-modular or client styles for .l-header region.
+
+.l-header {
+	background-color: black;
+}
+
+// Top Bar
+//--------------------------------------------------
+
+.title-area .name {
+height:55px;
+a{
+	background: url('../images/YW_logo.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	width:150px;
+	height:50px;
+	padding-bottom: 0px;
+}
+}
+.top-bar {
+  .title-area {}
+}
+
+.top-bar-section {}
+.top-bar-section .left {}
+.top-bar-section .right {}
