@@ -1,37 +1,96 @@
-<script type="text/javascript">
-// For resizing the main image window on load/resize
-window.addEventListener('load',fit,false);
-window.addEventListener('resize',fit,false);
-function fit(){
-    var myHeight;
-    var myMargin;
-    if( typeof( window.innerWidth ) == 'number' ) {
-        //Non-IE
-        myHeight = window.innerHeight;
-    } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-        //IE 6+ in 'standards compliant mode'
-        myHeight = document.documentElement.clientHeight;
-    }
-    myHeight = myHeight - 75;
-    myMargin = myHeight;
-    myMargin = myMargin - 400;
-    myMargin = myMargin / 2;
-    document.getElementById('resizeOnLoad').style.height=myHeight + 'px';
-    document.getElementById('marginOnLoad').style.marginTop=myMargin + 'px';
-}
-</script>
+<!--.page -->
+<div role="document" class="page">
+
+  <!--.l-header -->
+  <header role="banner" class="l-header">
+
+    <?php if ($top_bar): ?>
+      <!--.top-bar -->
+      <?php if ($top_bar_classes): ?>
+        <div class="<?php print $top_bar_classes; ?>">
+      <?php endif; ?>
+      <nav class="top-bar"<?php print $top_bar_options; ?>>
+        <ul class="title-area">
+          <li class="name"><a href="<?php print $front_page; ?>"></a></li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span><?php print $top_bar_menu_text; ?></span></a></li>
+        </ul>
+        <section class="top-bar-section">
+          <?php if ($top_bar_main_menu) :?>
+            <?php print $top_bar_main_menu; ?>
+          <?php endif; ?>
+          <?php if ($top_bar_secondary_menu) :?>
+            <?php print $top_bar_secondary_menu; ?>
+          <?php endif; ?>
+        </section>
+      </nav>
+      <?php if ($top_bar_classes): ?>
+        </div>
+      <?php endif; ?>
+      <!--/.top-bar -->
+    <?php endif; ?>
 
 
+    <?php if (!empty($page['header'])): ?>
+      <!--.l-header-region -->
+      <section class="l-header-region row">
+        <div class="large-12 columns">
+          <?php print render($page['header']); ?>
+        </div>
+      </section>
+      <!--/.l-header-region -->
+    <?php endif; ?>
 
-<?php
-// make sure we have metatags for the front page
-render($page['content']['metatags']); 
+  </header>
+  <!--/.l-header -->
+  
+      <!--.l-BC-->
+    <section class="l-BC row">
+      <div class="large-12 columns">
+        <?php if ($breadcrumb): print $breadcrumb; endif; ?>
+      </div>
+    </section>
+    <!--/.l-BC -->
 
-?>
+  <?php if (!empty($page['featured'])): ?>
+    <!--.featured -->
+    <section class="l-featured row">
+      <div class="large-12 columns">
+        <?php print render($page['featured']); ?>
+      </div>
+    </section>
+    <!--/.l-featured -->
+  <?php endif; ?>
 
-AAWDC Homepage Here
+  <?php if ($messages && !$zurb_foundation_messages_modal): ?>
+    <!--.l-messages -->
+    <section class="l-messages row">
+      <div class="large-12 columns">
+        <?php if ($messages): print $messages; endif; ?>
+      </div>
+    </section>
+    <!--/.l-messages -->
+  <?php endif; ?>
+
+  <?php if (!empty($page['help'])): ?>
+    <!--.l-help -->
+    <section class="l-help row">
+      <div class="large-12 columns">
+        <?php print render($page['help']); ?>
+      </div>
+    </section>
+    <!--/.l-help -->
+  <?php endif; ?>
+  
+   
 
 
+  
+
+  <main role="main" class="row l-main">
+homepage
+  </main>
+
+  <!--/.l-main-->
 
 
     <!--.l-footer-->
@@ -55,10 +114,6 @@ AAWDC Homepage Here
 
     </footer>
     <!--/.footer-->
-
-
-
-
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
