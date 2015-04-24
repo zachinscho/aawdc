@@ -9,7 +9,7 @@
  */
 function STARTER_form_system_theme_settings_alter(&$form, &$form_state) {}
 
-function yw_desktop_css_alter(&$css) {
+function aawdc_desktop_css_alter(&$css) {
   unset($css['sites/all/themes/zurb-foundation/css/foundation.min.css']);
   unset($css['sites/all/themes/zurb-foundation/css/base.css']);
   unset($css['sites/all/themes/zurb-foundation/css/normalize.css']);

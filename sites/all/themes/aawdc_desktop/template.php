@@ -176,7 +176,7 @@ function THEMENAME_preprocess_views_view_fields(&$variables) {
 /**
  * Implements hook_css_alter().
  */
-function yw_desktop_css_alter(&$css) {
+function aawdc_desktop_css_alter(&$css) {
   // Always remove base theme CSS.
   $theme_path = drupal_get_path('theme', 'zurb_foundation');
 
