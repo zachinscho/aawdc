@@ -1,7 +1,39 @@
 .mainWrapper {
 	background: $dkTan;
+	overflow: auto;
+	padding-top: $basePadding;
+	.row {
+		margin-bottom: $basePadding;
+	}
 	.negative {
 		background: $white;
+		padding: $basePadding;
+		@extend .robotoRegular;
+		color: $black;
+		font-size: 15px;
+		h3 {
+			@extend .robotoCondensedRegular;
+			@extend .fontMedium;
+			color: $red;
+		}
+		
+	}
+	
+	
+	
+	.topFacts {
+		.negative {
+			@extend .robotoCondensedRegular;
+			@extend .fontMedium;
+			color: $blue;
+			h3 {
+				color: $blue;
+				@extend .robotoCondensedRegular;
+				font-size: 40px;
+				margin: 0;
+				padding: 0;
+			}
+		}
 	}
 }
 

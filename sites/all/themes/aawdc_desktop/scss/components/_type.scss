@@ -1,6 +1,6 @@
 // Docs: http://foundation.zurb.com/docs/components/type.html
 // Before adding styles be sure to modify variables.
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500,900);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 a {
 	color: $blue;
@@ -14,8 +14,47 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 }
 
+.robotoDarkest {
+	font-family: "Roboto";
+	font-weight: 900;
+}
+.robotoCondensedBold {
+	font-family: "Roboto Condensed";
+	font-weight: 700;
+}
+.robotoRegular {
+	font-family: "Roboto";
+	font-weight: 500;
+}
+.robotoCondensedRegular {
+	font-family: "Roboto Condensed";
+	font-weight: 400;
+}
+
+.fontRidicLarge {font-size: 78px;}
+.fontLarge {font-size: 32px;}
+.fontMedium{font-size: 24px;}
+
 h1 {
 	text-transform: uppercase;
+}
+
+body {
+	font-size: 15px;
+	@extend .robotoRegular;
+}
+
+a {
+	@extend .robotoCondensedRegular;
+}
+.smallLabel {
+	text-transform: uppercase;
+	@extend .robotoCondensedBold;
+	font-size: 8.5px;
+	color: dkGray;
+	float: right;
+	display: block;
+		
 }
 
 .title {}

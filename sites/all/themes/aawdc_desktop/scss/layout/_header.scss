@@ -16,17 +16,72 @@
 
 .imageHero {
 	clear: both;
-	
 	background-image: url(../images/test.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 400px;
+	padding-top: $basePaddingHuge;
+	padding-bottom: $basePaddingHuge;
+	border-top-left-radius:20%;
+    border-top-right-radius:20%;
 	
+	h2 {
+		color: $white;
+		@extend .robotoDarkest;
+		@extend .fontRidicLarge;
+		text-transform: uppercase;	
+	}
+	
+}
+
+.calloutTryp {
+	text-align: center;
+	padding-top: $basePadding;
+	padding-bottom: $basePadding;
+	h3 {
+		color: $dkGray;
+		@extend .robotoCondensedRegular;
+		@extend .fontLarge;	
+		line-height: 27px;
+	}
+	span {
+		display: block;
+		max-width: 200px;
+		height: 80px;
+		margin-left: auto;
+		margin-right: auto;
+		&.career {
+			background-image: url(../images/step.png);
+			background-size: 30%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		&.workforce {
+			background-image: url(../images/buildings.png);
+			background-size: 30%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		&.involved {
+			background-image: url(../images/hand.png);
+			background-size: 20%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+	}
 }
 
 .calloutHero {
 	background: $dkGray;
 	color: $white;
+	padding-top: $basePaddingLarge;
+	padding-bottom: $basePaddingLarge;
+		p {
+			@extend .robotoCondensedRegular;
+			@extend .fontMedium;	
+			margin: 0;
+			padding: 0;
+			line-height: 1em;
+		}
 }
 
 // Top Bar

@@ -64,7 +64,7 @@
 	<div class="imageHero">
 		<section class="row">
 			<div class="large-12 columns">
-        		Committed to you
+        		<h2>Committed to you</h2>
       		</div>
     	</section>
 	</div>
@@ -72,16 +72,16 @@
 	<div class="calloutTryp">
 	  	<section class="row">
 		  	<div class="large-4 columns negative">
-	        	<span></span>
-	        	<h3>Take the next career step</h3>
+	        	<span class="career"></span>
+	        	<h3>Take the next<br/> career step</h3>
 	      	</div>
 	      	<div class="large-4 columns negative">
-	        	<span></span>
-	        	<h3>Build your workforce</h3>
+	        	<span class="workforce"></span>
+	        	<h3>Build your<br/> workforce</h3>
 	      	</div>
 	      	<div class="large-4 columns negative">
-	        	<span></span>
-	        	<h3>Get Involved</h3>
+	        	<span class="involved"></span>
+	        	<h3>Get<br/> Involved</h3>
 	      	</div> 	
 	  	</section>
 	</div>
@@ -89,55 +89,72 @@
 	<div class="calloutHero">
 		<section class="row">
 			<div class="large-12 columns">
-        		Our vision, mission, and core values are at the heart of the way we work to help you achieve success.  Our committed staff and Boards of Directors want to help you to achieve the goals for your business or career success.
+        		<p>Our vision, mission, and core values are at the heart of the way we work to help you achieve success.  Our committed staff and Boards of Directors want to help you to achieve the goals for your business or career success.</p>
       		</div>
     	</section>
+    	
 	</div>
 	
+	
 	<div class="mainWrapper">
-	  <div class="row">
-	  	<div class="large-4 columns negative">
+		
+	  <div class="row topFacts">
+	  	<div class="large-4 columns">
+		  	<div class="negative">
         		<h3>10,000</h3> 
         		Job seekers Trained.
+		  	</div>
        	</div>
       	
-      	<div class="large-4 columns negative">
+      	<div class="large-4 columns">
+		  	<div class="negative">
         		<h3>10,000</h3> 
         		Job seekers Trained.
-      	</div>
+		  	</div>
+       	</div>
       	
-      	<div class="large-4 columns negative">
+      	<div class="large-4 columns">
+		  	<div class="negative">
         		<h3>10,000</h3> 
         		Job seekers Trained.
-      	</div>
+		  	</div>
+       	</div>
 	  </div>
 	  
 	  <div class="row">
-	  	<div class="large-9 columns negative">
-		  	<span>Blog</span>
-		  	<h3>Title Here</h3>
-        	<p>Our vision, mission, and core values are at the heart of the way we work to help you achieve success.  Our committed staff and Boards of Directors want to help you to achieve the goals for your business or career success.</p>
+	  	<div class="large-9 columns">
+		  	<div class="negative">
+			  	<span class="smallLabel">Blog</span>
+			  	<h3>Title Here</h3>
+	        	<p>Our vision, mission, and core values are at the heart of the way we work to help you achieve success.  Our committed staff and Boards of Directors want to help you to achieve the goals for your business or career success.</p>
+		  	</div>
       	</div>
       	
-      	<div class="large-3 columns negative">
-        	<span>What's New</span>
-		  	<h3>Title Here</h3>
-        	<p>Our vision, mission, and core values are at the heart of the.</p>
+      	<div class="large-3 columns">
+	      	<div class="negative">
+	        	<span class="smallLabel">What's New</span>
+			  	<h3>Title Here</h3>
+	        	<p>Our vision, mission, and core values are at the heart of the.</p>
+	      	</div>
       	</div>
       	
 	  </div>
 	  
 	  <div class="row">
-	  	<div class="large-9 columns negative">
-        	<span>Success Stories</span>
-		  	<h3>Title Here</h3>
-        	<p>Our vision, mission, and core values are at the heart of the way we work to help you achieve success.  Our committed staff and Boards of Directors want to help you to achieve the goals for your business or career success.</p>
+	  	<div class="large-9 columns">
+		  	<div class="negative">
+	        	<span class="smallLabel">Success Stories</span>
+			  	<h3>Title Here</h3>
+	        	<p>Our vision, mission, and core values are at the heart of the way we work to help you achieve success.  Our committed staff and Boards of Directors want to help you to achieve the goals for your business or career success.</p>
+		  	</div>
       	</div>
       	
-      	<div class="large-3 columns negative">
-        	<span>Hot Jobs</span>
-		  	<h3>Title Here</h3>
-        	<p>Our vision, mission, and core values are at the heart of the way we work to.</p>
+      	<div class="large-3 columns">
+	      	<div class="negative">
+	        	<span class="smallLabel">Hot Jobs</span>
+			  	<h3>Title Here</h3>
+	        	<p>Our vision, mission, and core values are at the heart of the way we work to.</p>
+	      	</div>
       	</div>
       	
 	  </div>
@@ -146,6 +163,7 @@
 
   <!--/.l-main-->
 	<footer class="topFooter">
+		<div class="curvedPiece"></div>
 	  	<div class="row">
 			  <div class="large-4 columns">
 				  <h3>Learn More</h3>
@@ -166,12 +184,13 @@
 	  
     <footer class="middleFooter">  
 	    <div class="row">
-	          <div class="large-4 columns">
-		          <span>Get in touch</span>
-		          <p><a href="tel://410-766-5212">410-766-5212</a><br/>
-		          7493 Baltimore-Annapolis Blvd. Glen Burnie, MD 21061</p>
+	          <div class="large-4 columns getInTouch">
+		          <span class="smallLabel">Get in touch</span>
+		          <a href="tel://410-987-3890">410-987-3890</a><br/>
+		          <p>AAWDC | 401 Headquarters Drive <br/>
+					 Suite 208 | Millersville, MD 21108</p></p>
 	          </div>
-			  <div class="large-8 columns">
+			  <div class="large-8 columns legal">
 		           <p class="copyright"><a href="http://aawdc.org/">&copy; <?php print date('Y') . ' ' . "Anne Arundel Workforce Development Corporation" . ' ' . t('All rights reserved.'); ?></a> AAWDC YouthWorks programs are equal opportunity, affirmative action, Title IX and ADA Title 504 compliant. Assistive devices and alternative materials for services are available with advanced request.</p>
 	          </div>  
 	    </div>
@@ -179,8 +198,12 @@
     
     <footer class="bottomFooter">  
 	    <div class="row">
+		    <div class="large-6 columns">
 	          <a href="#" class="MWE"></a>
+		    </div>
+		    <div class="large-6 columns">
 	          <a href="#" class="MJN"></a>
+		    </div>
 	    </div>
     </footer>
     

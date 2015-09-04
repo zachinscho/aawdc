@@ -2,21 +2,69 @@
 
 .topFooter {
 	background: $red;
+	color: $white;
+	padding-bottom: $basePadding;
+	.curvedPiece {
+		background: $dkTan;
+		height: 50px;
+		border-bottom-left-radius:30%;
+		border-bottom-right-radius:30%;
+		margin-bottom: $basePadding;
+	}
+	
+	a {
+		color: $white;
+	}
+
 }
 
 .middleFooter {
 	background: $dkGray;
+	color: $white;
+	padding: 0px;
+	
+		a {
+			color: $white;
+			&:hover {
+				color: $white;
+			}
+		}
+	.getInTouch {
+		padding-top: $basePaddingLarge;
+		padding-bottom: $basePaddingLarge;
+		background: $blue;
+		a {
+			margin-top: $basePadding;
+			font-size: 16px;
+			@extend .robotoRegular;
+			&:hover {
+				color: $dkGray !important;
+			}
+		}
+		
+	}
+	.legal {
+		padding-top: $basePadding;
+		padding-bottom: $basePadding;
+		p {
+			margin:0;
+			padding: 0;
+		}
+	}		
 }
 
 .bottomFooter {
 	background: $white;
+	padding-top: $basePadding;
+	padding-bottom: $basePadding;
 	overflow: auto;
 	a {
 		display:block;
-		width: 50%;
-		float: left;
+		width: 100%;
+		max-width: 300px;
 		height: 100px;
-		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
 		&.MWE {
 			background-image: url(../images/AAWDClogo.png);
 			background-size: contain;
