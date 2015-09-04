@@ -1,13 +1,17 @@
 // Docs: http://foundation.zurb.com/docs/components/type.html
 // Before adding styles be sure to modify variables.
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,500);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
 a {
-	color: $YW_Aqua;
+	color: $blue;
 	&:hover {
 		color: $YW_Link_Hover;
 	}
 }
 h1, h2, h3, h4, h5, h6 {
 	text-transform: capitalize;
+	font-family: "Roboto";
+	font-weight: 500;
 }
 
 h1 {

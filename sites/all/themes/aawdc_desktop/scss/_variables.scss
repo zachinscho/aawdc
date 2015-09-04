@@ -16,15 +16,15 @@
 
 
 //colors
-$YW_White: #fff;
-$YW_Red: #de2127;
-$YW_Grey: #40434C;
-$YW_Black: #000;
-$YW_Gold: #fdd700;
-$YW_Aqua: #61b2a2;
-$YW_Aqua_Sub: #b0d6cd; // Subdued Version
-$YW_Blue: #00b1d6;
-$YW_Blue_Sub: #9ac6ca; // Subdued Version
+$dkGray: #797979;
+$dkTan: #ccd0c5;
+$red: #e24137;
+$black: #000;
+$blue: #639DC8;
+$dkBlue: #b0d6cd; // Subdued Version
+$gold: #fdd700;
+$white: #ffffff;
+
 
 $YW_Link_Hover: #5aa092;
 $YW_Trans_Blk: rgba(0, 0, 0, .85);
@@ -135,10 +135,10 @@ $body-font-family: "proxima-nova-soft", "Helvetica Neue", "Helvetica", Helvetica
 
 // Colors
 
- $primary-color: $YW_Aqua;
- $secondary-color: $YW_Gold;
- $alert-color: $YW_Red;
- $success-color: $YW_Blue;
+ $primary-color: $blue;
+ $secondary-color: $gold;
+ $alert-color: $red;
+ $success-color: $blue;
 
 // Make sure border radius matches unless we want it different.
 
@@ -231,7 +231,7 @@ $row-width: em-calc(1000);
  $header-font-family: "proxima-nova-soft", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
  $header-font-weight: 400;
 // $header-font-style: normal;
- $header-font-color: $YW_Black;
+ $header-font-color: $black;
 // $header-line-height: 1.4;
 // $header-top-margin: .2em;
 // $header-bottom-margin: .5em;

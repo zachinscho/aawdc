@@ -8,13 +8,13 @@
 
 .push-3 {
 	@media #{$small} { 
-		border-left: 2px solid $YW_Aqua;
+		border-left: 2px solid $blue;
 		padding-left: $YW_BasePaddingLarge;
 	}
 
 }
 .large-3.pull-9.l-sidebar-first.columns.sidebar{
-	border-top: 2px solid $YW_Aqua;
+	border-top: 2px solid $blue;
 	padding-top: $YW_BasePaddingLarge;
 		@media #{$small} { 
 			border-top:none;

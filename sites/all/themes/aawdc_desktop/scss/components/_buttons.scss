@@ -4,17 +4,17 @@
 // "scss/_variables.scss" file.
 
 .button, .form-submit {
-	background-color: $YW_Gold;
+	background-color: $gold;
 	font-size: 1.5em;
-	color: $YW_Grey;
+	color: $dkGray;
 	font-weight: 400;
 	border-radius: $global-radius;
 	text-transform: capitalize;
 	padding-top: $YW_BasePadding;
 	padding-bottom: $YW_BasePadding;
 	&:hover {
-		background-color: darken($YW_Gold, 4);
-		color: $YW_Black;
+		background-color: darken($gold, 4);
+		color: $black;
 	}
 	
 }
@@ -30,8 +30,8 @@ button {
 }	
 }
 .button.secondary {
-	color: $YW_Grey;
+	color: $dkGray;
 	&:hover {
-		color: $YW_Black;
+		color: $black;
 	}
 	}

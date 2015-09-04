@@ -1,129 +1,83 @@
 // menu/header/etc
 
-// color for all
-.top-bar, .contain-to-grid, .top-bar-section li a:not(.button), .top-bar-section ul {
-	background: none;
-}
-.top-bar {
-background: $YW_Trans_Blk;
-}
-
-// font sizes and colors for men/sub/sub sub
-.top-bar-section ul {
-	font-size: 1.1em;
-	ul {
-		font-size: 1em;
-		
-		li a:not(.button) {
-			background-color: $YW_Black;
-			&:hover {
-				background: $YW_Grey;
-			}
-		}
-		ul {
-			font-size: 1em;
-			li a:not(.button) {
-			background-color: $YW_Black;
-		}
-		}
-	}
-}
-
-.top-bar {
-
-// set new height for nav bar
-  height: 55px;
-  line-height: 25px;
-  // add spacing to top links to line up with logo
-  .main-nav, .secondary {
-	  margin-top:5px;
-  }
-}
-
-
-
-.left-off-canvas-menu {
-.top-bar-section {
-font-family: $header-font-family;
-font-weight: 700;
+.l-header {
+	clear: both;
 	form {
+			width: 300px;
+			float: right;
+			padding:10px;
+			input[type=text] {
+				border:none;
+				color: $white;
+				float: left;
+				width: 70%;
+			}
+			button {
+				border: none;
+				//color: $white;
+				background: none;
+				box-shadow:none;
+				float: right;
+				width: 25%;
+			}
+		}
+	nav {
+	float: right;
+		font-family: "Roboto Condensed";
+	font-weight: 400;
+		
+		
+		//menu 
+		ul {
+		//width:100%;
 		padding:10px;
-		input[type=text] {
-			border:none;
-			color: $YW_White;
-			background-color: $YW_Black;
-			width: 70%
-		}
-		button {
-			border: none;
-			//color: $YW_White;
-			background: none;
-			width: 30%;
-			box-shadow:none;
-		}
-	}
-	
-	//menu 
-	ul {
-	width:100%;
-	padding:10px;
-	margin: 0px;
-		li {
-		
-		
-		width:100%;
-		list-style-type: none;
-			a, .nolink {
-			padding: 10px;
-				display:block;
-				width:100%;
-				
-				&:hover {
-					cursor: pointer;
-					color: $YW_Gold;
-				}
-				
-				&.active {
-					color: $YW_Gold;
-					
-				}
-			}
-		}
-		// submenu
-			ul {
-			&.menu {
-				display: none;
-			}
-			&.visible {
-				display: block;
-			}
+		margin: 0px;
 			li {
-			a {
-			font-weight: 400;
-			color: $YW_Red;
-			padding: 5px;
-				&.active {
-					color: $YW_Gold;
+			
+			
+			//width:100%;
+			list-style-type: none;
+			float: left;
+				a, .nolink {
+					padding: 10px;
+					display:block;
+					width:100%;
+					color: $blue;
+					
+					&:hover {
+						cursor: pointer;
+						color: $dkBlue;
+					}
+					
+					&.active {
+						color: $dkBlue;
+						
+					}
 				}
 			}
-				
+			
+			// submenu
+				ul {
+					display: none;
+					li {
+						a {
+						font-weight: 400;
+						color: $red;
+						padding: 5px;
+							&.active {
+								color: $gold;
+							}
+						}
+						
+					}
+				}
+			
+			&:hover {
+				ul {
+					display: normal;
+					}
 			}
-		}
-	
-		}
-}
-}
-//menu 
-
-
-
-//label
-.top-bar-section .dropdown li label {
-	background-color: $YW_Aqua;
-	cursor: auto;
-	padding-bottom: 8px;
-}
-
-.parent-link.js-generated {
-	background-color: $YW_Gold;
+		
+			}
+	}
 }
