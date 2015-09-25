@@ -82,6 +82,7 @@ scripts[] = js/foundation.min.js
 regions[navigation]          = Navigation
 regions[header]              = Header
 regions[help]                = Help
+regions[MissionStatement] 	 = MissionStatement
 regions[highlighted]         = Highlighted
 regions[featured]            = Featured
 regions[content]             = Content
@@ -90,13 +91,15 @@ regions[sidebar_second]      = Right Sidebar
 regions[triptych_first]      = Callout one
 regions[triptych_middle]     = Callout two
 regions[triptych_last]       = Callout three
-regions[footer_social] 		 = Footer Social
 regions[footer]              = Footer
-regions[home_routes]         = Homepage Routes
-regions[home_story]          = Homepage Story
-regions[home_poll]           = Homepage Poll
-regions[home_know]           = Homepage Know
-regions[home_announcements]  = Homepage Announcements
+regions[footerOne]           = Footer One
+regions[footerTwo]           = Footer Two
+regions[footerThree] 		 = Footer Three
+regions[HomepageFactOne] 	 = Homepage Fact One
+regions[HomepageFactTwo] 	 = Homepage Fact Two
+regions[HomepageFactThree] 	 = Homepage Fact Three
+regions[HomepageWhatsNew] 	 = Homepage Whats New
+
 
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the

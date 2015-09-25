@@ -11,10 +11,38 @@
 		@extend .robotoRegular;
 		color: $black;
 		font-size: 15px;
-		h3 {
+		img {
+			float: left;
+			margin-right: $basePadding;
+			margin-bottom: $basePadding;
+			margin-top: $basePadding;
+		}
+		h2, h3 {
 			@extend .robotoCondensedRegular;
 			@extend .fontMedium;
 			color: $red;
+			a {
+				color: $red;
+				&:hover {
+					color: $dkRed;
+				}
+			}
+		}
+		.view-id-homepage.view-display-id-block_2 {
+			h5 {
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+				@extend .robotoCondensedRegular;
+				a {
+					color: $red;
+					&:hover {
+						color: $dkRed;
+					}
+				}
+			}
+			p {
+				margin-bottom: 0px;
+			}
 		}
 		
 	}
@@ -26,14 +54,31 @@
 			@extend .robotoCondensedRegular;
 			@extend .fontMedium;
 			color: $blue;
-			h3 {
+			h2, h3 {
 				color: $blue;
 				@extend .robotoCondensedRegular;
 				font-size: 40px;
 				margin: 0;
 				padding: 0;
 			}
+			p {
+				margin-bottom: 0px;
+			}
 		}
 	}
+}
+
+// secondary
+
+.l-main {
+	//background: $white;
+}
+
+.main {
+	background: $white;
+}
+
+.l-sidebar-second {
+	//background: $white;
 }
 

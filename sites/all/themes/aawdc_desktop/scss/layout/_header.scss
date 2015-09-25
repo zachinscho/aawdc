@@ -6,7 +6,7 @@
 		float: left;
 		height:100px;
 		width: 300px;
-		background: aqua;
+		//background: aqua;
 		background-image: url(../images/AAWDClogo.png);
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -24,11 +24,12 @@
 	border-top-left-radius:20%;
     border-top-right-radius:20%;
 	
-	h2 {
+	h1 {
 		color: $white;
 		@extend .robotoDarkest;
 		@extend .fontRidicLarge;
 		text-transform: uppercase;	
+		line-height: 60px;
 	}
 	
 }

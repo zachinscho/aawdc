@@ -93,11 +93,9 @@
 	       //echo $content['field_icon_color'][0]['#markup'];
 		      echo '<div class="iconWrap ' . $content['field_icon_color'][0]['#markup'] . '"><i class="' . $content['field_icon_color'][0]['#markup'] . ' icon icomoon icon-' . $content['field_icon'][0]['#icon'] . '" aria-hidden="true"></i></div>';
 	      }?>
-        <h1 id="page-title" class="title">
-
-		
-       
-	      <?php print $title; ?></h1>
+        <!--<h1 id="page-title" class="title">
+	      <?php print $title; ?></h1>-->
+	      
         <?php print render($title_suffix); ?>
       <?php endif; ?>
      

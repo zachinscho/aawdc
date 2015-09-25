@@ -58,6 +58,8 @@
 	<!-- TypeKit embed code. EBS account -->
 	<script src="//use.typekit.net/blp8nrx.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 	
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

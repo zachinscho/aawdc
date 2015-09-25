@@ -15,6 +15,41 @@
 	a {
 		color: $white;
 	}
+	h2 {
+		font-size: 17px;
+		color: $white;
+		@extend .robotoCondensedBold;
+	}
+	ul {
+		padding-left: 0px;
+		margin-left: 0px;
+		@extend .robotoRegular;
+		li {
+			list-style-type: none;
+			margin-left: 0px;
+		}
+	}
+	.block-menu-menu-stay-in-touch {
+		.title {
+			display: none;
+		}
+		ul {
+			li {
+				display: block;
+				float: left;
+				margin-right: 10px;
+				i {
+					font-size: 30px;
+				}
+				
+			}
+		&:after {
+		content:'';
+		display:block;
+		clear: both;
+		}
+		}
+	}
 
 }
 
