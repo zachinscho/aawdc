@@ -7701,7 +7701,7 @@ a.th {
 
 /* line 6, ../scss/components/_buttons.scss */
 .button, .form-submit {
-  background-color: #fdd700;
+  background-color: #639dc8;
   font-size: 1.5em;
   color: #797979;
   font-weight: 400;
@@ -7712,25 +7712,40 @@ a.th {
 }
 /* line 15, ../scss/components/_buttons.scss */
 .button:hover, .form-submit:hover {
-  background-color: #e9c600;
+  background-color: #5494c3;
   color: black;
 }
 
 /* line 22, ../scss/components/_buttons.scss */
+.button.secondary {
+  background: #b0d6cd;
+}
+/* line 24, ../scss/components/_buttons.scss */
+.button.secondary:hover {
+  background: #639dc8;
+}
+
+/* line 29, ../scss/components/_buttons.scss */
+.breadcrumbs {
+  background: #ccc;
+  border: none;
+}
+
+/* line 34, ../scss/components/_buttons.scss */
 button {
   margin-bottom: 0px;
 }
 
-/* line 27, ../scss/components/_buttons.scss */
+/* line 39, ../scss/components/_buttons.scss */
 .button-group .button.secondary {
   margin-right: 5px;
 }
 
-/* line 32, ../scss/components/_buttons.scss */
+/* line 44, ../scss/components/_buttons.scss */
 .button.secondary {
   color: #797979;
 }
-/* line 34, ../scss/components/_buttons.scss */
+/* line 46, ../scss/components/_buttons.scss */
 .button.secondary:hover {
   color: black;
 }

@@ -4,7 +4,7 @@
 // "scss/_variables.scss" file.
 
 .button, .form-submit {
-	background-color: $gold;
+	background-color: $blue;
 	font-size: 1.5em;
 	color: $dkGray;
 	font-weight: 400;
@@ -13,10 +13,22 @@
 	padding-top: $YW_BasePadding;
 	padding-bottom: $YW_BasePadding;
 	&:hover {
-		background-color: darken($gold, 4);
+		background-color: darken($blue, 4);
 		color: $black;
 	}
 	
+	
+}
+.button.secondary {
+	background: $dkBlue;
+	&:hover {
+		background: $blue;
+	}
+}
+
+.breadcrumbs {
+	background: #ccc;
+	border: none;
 }
 // reset margin
 button {
