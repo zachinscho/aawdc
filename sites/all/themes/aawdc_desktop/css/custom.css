@@ -7403,8 +7403,8 @@ a.th {
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 50px;
-  border-top-left-radius: 20%;
-  border-top-right-radius: 20%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
 }
 /* line 27, ../scss/layout/_header.scss */
 .imageHero h1 {
@@ -9573,66 +9573,82 @@ input[type=checkbox] {
 }
 /* line 9, ../scss/components/_menu.scss */
 .l-header form input[type=text] {
-  border: none;
-  color: white;
+  border: 1px solid #e24137;
+  color: #797979;
   float: left;
   width: 70%;
 }
 /* line 15, ../scss/components/_menu.scss */
 .l-header form button {
   border: none;
-  background: none;
+  color: white;
+  background: #e24137;
   box-shadow: none;
   float: right;
   width: 25%;
+  font-size: 12px;
+  border-radius: 0px;
 }
 /* line 24, ../scss/components/_menu.scss */
+.l-header form button:hover {
+  background: #701610;
+  color: white;
+}
+/* line 31, ../scss/components/_menu.scss */
 .l-header nav {
   float: right;
   font-family: "Roboto Condensed";
   font-weight: 400;
+  z-index: 10000;
 }
-/* line 31, ../scss/components/_menu.scss */
+/* line 39, ../scss/components/_menu.scss */
 .l-header nav ul {
-  padding: 10px;
-  margin: 0px;
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
-/* line 35, ../scss/components/_menu.scss */
+/* line 46, ../scss/components/_menu.scss */
 .l-header nav ul li {
-  list-style-type: none;
+  display: block;
+  position: relative;
   float: left;
 }
-/* line 41, ../scss/components/_menu.scss */
-.l-header nav ul li a, .l-header nav ul li .nolink {
-  padding: 10px;
-  display: block;
-  width: 100%;
-  color: #639dc8;
-}
-/* line 47, ../scss/components/_menu.scss */
-.l-header nav ul li a:hover, .l-header nav ul li .nolink:hover {
-  cursor: pointer;
-  color: #b0d6cd;
-}
-/* line 52, ../scss/components/_menu.scss */
-.l-header nav ul li a.active, .l-header nav ul li .nolink.active {
-  color: #b0d6cd;
-}
-/* line 60, ../scss/components/_menu.scss */
-.l-header nav ul ul {
+/* line 51, ../scss/components/_menu.scss */
+.l-header nav li ul {
   display: none;
 }
-/* line 63, ../scss/components/_menu.scss */
-.l-header nav ul ul li a {
-  font-weight: 400;
-  color: #e24137;
-  padding: 5px;
+/* line 54, ../scss/components/_menu.scss */
+.l-header nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: #639dc8;
+  padding: 5px 15px 5px 15px;
+  background: white;
+  margin-left: 1px;
+  white-space: nowrap;
 }
-/* line 67, ../scss/components/_menu.scss */
-.l-header nav ul ul li a.active {
-  color: #fdd700;
+/* line 63, ../scss/components/_menu.scss */
+.l-header nav ul li a:hover {
+  color: #000;
+}
+/* line 66, ../scss/components/_menu.scss */
+.l-header nav li:hover ul {
+  display: block;
+  position: absolute;
+  z-index: 10000;
+}
+/* line 71, ../scss/components/_menu.scss */
+.l-header nav li:hover li {
+  float: none;
+  font-size: 11px;
+}
+/* line 75, ../scss/components/_menu.scss */
+.l-header nav li:hover a {
+  background: #ccd0c5;
 }
 /* line 76, ../scss/components/_menu.scss */
-.l-header nav ul:hover ul {
-  display: normal;
+.l-header nav li:hover li a:hover {
+  background: #ccd0c5;
 }

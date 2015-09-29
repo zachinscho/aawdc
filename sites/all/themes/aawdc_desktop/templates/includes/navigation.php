@@ -1,7 +1,7 @@
  <!--.l-header -->
   <header class="l-header">
   	
-  	<a href="#" class="logo"></a>
+  	<a href="<?php print $front_page; ?>" class="logo"></a>
   	
          <nav>
           <?php if ($top_bar_main_menu) :?>
