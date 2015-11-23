@@ -7536,13 +7536,14 @@ a.th {
 .mainWrapper .topFacts .negative p {
   margin-bottom: 0px;
 }
-/* line 66, ../scss/layout/_main.scss */
-.mainWrapper .topFacts .negative p.meta {
-  font-size: .7em;
+/* line 69, ../scss/layout/_main.scss */
+.mainWrapper .topFacts .negative h6 {
+  font-size: .5em;
   color: #797979;
+  text-transform: uppercase;
 }
 
-/* line 81, ../scss/layout/_main.scss */
+/* line 84, ../scss/layout/_main.scss */
 .main {
   background: white;
 }

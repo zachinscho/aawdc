@@ -63,10 +63,13 @@
 			}
 			p {
 				margin-bottom: 0px;
-				&.meta {
-					font-size: .7em;
-					color: $dkGray;
-				}
+				
+			}
+			
+			h6 {
+				font-size: .5em;
+				color: $dkGray;
+				text-transform: uppercase;
 			}
 		}
 	}
