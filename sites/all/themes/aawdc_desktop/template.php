@@ -196,7 +196,11 @@ function aawdc_desktop_css_alter(&$css) {
     // "Create" a new variable for the page.tpl.php.
     // This will expose $VAR_NAME in the page template.
     // You will most likely have to clear your cache.
-    $vars['heroImage'] = file_create_url($view['field_image']['#items'][0]['uri']);
+    if($view['field_image']['#items'][0]['uri']) {
+    	$vars['heroImage'] = file_create_url($view['field_image']['#items'][0]['uri']);
+    } else {
+	    $vars['heroImage'] = '';
+    }
   }
 }
 

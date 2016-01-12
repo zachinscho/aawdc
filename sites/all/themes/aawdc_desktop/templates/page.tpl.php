@@ -34,7 +34,13 @@
     <!--/.l-help -->
   <?php endif; ?>
   
-	<div class="imageHero" style="background: url(<?php print $heroImage ?>)">
+  <?php 
+	// Print hero image as background if present
+	  if($heroImage != '') { ?>
+	  <div class="imageHero" style="background: url(<?php print $heroImage ?>)">
+  <?php } else { ?>
+	  <div class="imageHero">
+  <?php } ?>
 		<section class="row">
 			<div class="large-7 columns">
         		<h1>
