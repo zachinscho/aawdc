@@ -34,11 +34,12 @@
     <!--/.l-help -->
   <?php endif; ?>
   
-
-	<div class="imageHero">
+	<div class="imageHero" style="background: url(<?php print $heroImage ?>)">
 		<section class="row">
 			<div class="large-7 columns">
-        		<h1><?php print $title ?></h1>
+        		<h1>
+					<?php print $title ?>
+				</h1>
       		</div>
     	</section>
 	</div>

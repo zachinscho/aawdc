@@ -184,8 +184,21 @@ function aawdc_desktop_css_alter(&$css) {
    if(strpos($path, $theme_path) === 0) {
      unset($css[$path]);
    }
+  }
  }
- }
+ 
+ function aawdc_desktop_preprocess_page(&$vars) {
+  $vars['heroImage'] = '';
+  // Get the object and do some other checks based on what you need.
+  if (($node = menu_get_object()) && $node->type) {
+    // Generate a render array for the node.
+    $view = node_view($node);
+    // "Create" a new variable for the page.tpl.php.
+    // This will expose $VAR_NAME in the page template.
+    // You will most likely have to clear your cache.
+    $vars['heroImage'] = file_create_url($view['field_image']['#items'][0]['uri']);
+  }
+}
 
 /**
  * Implements hook_js_alter().
