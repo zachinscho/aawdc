@@ -191,12 +191,8 @@ function aawdc_desktop_css_alter(&$css) {
   $vars['heroImage'] = '';
   // Get the object and do some other checks based on what you need.
   if (($node = menu_get_object()) && $node->type) {
-    // Generate a render array for the node.
     $view = node_view($node);
-    // "Create" a new variable for the page.tpl.php.
-    // This will expose $VAR_NAME in the page template.
-    // You will most likely have to clear your cache.
-    if($view['field_image']['#items'][0]['uri']) {
+    if(isset($view['field_image']['#items'][0]['uri'])) {
     	$vars['heroImage'] = file_create_url($view['field_image']['#items'][0]['uri']);
     } else {
 	    $vars['heroImage'] = '';
