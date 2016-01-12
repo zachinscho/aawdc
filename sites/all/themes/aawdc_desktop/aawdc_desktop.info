@@ -95,6 +95,7 @@ regions[footer]              = Footer
 regions[footerOne]           = Footer One
 regions[footerTwo]           = Footer Two
 regions[footerThree] 		 = Footer Three
+regions[footerFour] 		 = Footer Four
 regions[HomepageFactOne] 	 = Homepage Fact One
 regions[HomepageFactTwo] 	 = Homepage Fact Two
 regions[HomepageFactThree] 	 = Homepage Fact Three
