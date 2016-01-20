@@ -11,7 +11,7 @@
 		border-bottom-right-radius:30%;
 		margin-bottom: $basePadding;
 	}
-	
+
 	a {
 		color: $white;
 	}
@@ -41,7 +41,7 @@
 				i {
 					font-size: 30px;
 				}
-				
+
 			}
 		&:after {
 		content:'';
@@ -57,7 +57,7 @@
 	background: $dkGray;
 	color: $white;
 	padding: 0px;
-	
+
 		a {
 			color: $white;
 			&:hover {
@@ -76,7 +76,7 @@
 				color: $dkGray !important;
 			}
 		}
-		
+
 	}
 	.legal {
 		padding-top: $basePadding;
@@ -85,7 +85,7 @@
 			margin:0;
 			padding: 0;
 		}
-	}		
+	}
 }
 
 .bottomFooter {
@@ -101,16 +101,16 @@
 		margin-left: auto;
 		margin-right: auto;
 		&.MWE {
-			background-image: url(../images/AAWDClogo.png);
-			background-size: contain;
-			background-repeat: no-repeat;	
-		}
-		
-		&.MJN {
-			background-image: url(../images/AAWDClogo.png);
+			background-image: url(../images/mwe_logo.jpg);
 			background-size: contain;
 			background-repeat: no-repeat;
-			
+		}
+
+		&.MJN {
+			background-image: url(../images/mjn_logo.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+
 		}
 	}
 }
@@ -118,25 +118,25 @@
 .l-footer {
 
 		p {
-	
+
 		}
 		a {
-			
+
 		}
 		.copyright {
 			font-size: .7em;
 			font-style: italic;
-		}	
-	
+		}
+
 }
 
-	
+
 	.footerInner {
 
 		a {
 
 			&:hover {
-				
+
 			}
 		}
 	}

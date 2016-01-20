@@ -28,10 +28,10 @@
     <footer class="bottomFooter">
 	    <div class="row">
 		    <div class="large-6 columns">
-	          <a href="#" class="MWE"></a>
+	          <a href="https://mwejobs.maryland.gov/vosnet/Default.aspx" class="MWE"></a>
 		    </div>
 		    <div class="large-6 columns">
-	          <a href="#" class="MJN"></a>
+	          <a href="http://www.workforceinvestmentworks.com/maryland/" class="MJN"></a>
 		    </div>
 	    </div>
     </footer>

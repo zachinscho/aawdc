@@ -7670,13 +7670,13 @@ a.th {
 }
 /* line 103, ../scss/layout/_footer.scss */
 .bottomFooter a.MWE {
-  background-image: url(../images/AAWDClogo.png);
+  background-image: url(../images/mwe_logo.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 }
 /* line 109, ../scss/layout/_footer.scss */
 .bottomFooter a.MJN {
-  background-image: url(../images/AAWDClogo.png);
+  background-image: url(../images/mjn_logo.png);
   background-size: contain;
   background-repeat: no-repeat;
 }

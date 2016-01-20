@@ -54,7 +54,7 @@
 	      	</div>
 	      	<div class="large-4 columns negative">
 	        	<span class="involved"></span>
-	        	<h3>Get<br/> Involved</h3>
+	        	<h3>Impact and<br/> Innovation</h3>
 	      	</div>
 	  	</section>
 	</div>
