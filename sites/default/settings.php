@@ -213,13 +213,13 @@
  * @endcode
  */
 $databases = array (
-  'default' => 
+  'default' =>
   array (
-    'default' => 
+    'default' =>
     array (
       'database' => 'aawdc',
       'username' => 'root',
-      'password' => 'root',
+      'password' => 'SaneOne13!',
       'host' => 'localhost',
       'port' => '',
       'driver' => 'mysql',
@@ -588,4 +588,3 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * the leading hash sign below.
  */
 # $conf['pressflow_smart_start'] = TRUE;
-

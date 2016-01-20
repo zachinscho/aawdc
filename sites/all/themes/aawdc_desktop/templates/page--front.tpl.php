@@ -32,7 +32,7 @@
     </section>
     <!--/.l-help -->
   <?php endif; ?>
-  
+
 
 	<div class="imageHero">
 		<section class="row">
@@ -41,7 +41,7 @@
       		</div>
     	</section>
 	</div>
-	
+
 	<div class="calloutTryp">
 	  	<section class="row">
 		  	<div class="large-4 columns negative">
@@ -55,42 +55,42 @@
 	      	<div class="large-4 columns negative">
 	        	<span class="involved"></span>
 	        	<h3>Get<br/> Involved</h3>
-	      	</div> 	
+	      	</div>
 	  	</section>
 	</div>
-	
+
 	<div class="calloutHero">
 		<section class="row">
 			<div class="large-12 columns">
         		<?php print render($page['MissionStatement']); ?>
       		</div>
     	</section>
-    	
+
 	</div>
-	
-	
+
+
 	<div class="mainWrapper">
-		
+
 	  <div class="row topFacts">
 	  	<div class="large-4 columns">
 		  	<div class="negative">
         		<?php print render($page['HomepageFactOne']); ?>
 		  	</div>
        	</div>
-      	
+
       	<div class="large-4 columns">
 		  	<div class="negative">
         		<?php print render($page['HomepageFactTwo']); ?>
 		  	</div>
        	</div>
-      	
+
       	<div class="large-4 columns">
 		  	<div class="negative">
         		<?php print render($page['HomepageFactThree']); ?>
 		  	</div>
        	</div>
 	  </div>
-	  
+
 	  <div class="row">
 	  	<div class="large-9 columns">
 		  	<div class="negative">
@@ -98,16 +98,16 @@
 	        	<?php print views_embed_view('homepage', 'block'); ?>
 		  	</div>
       	</div>
-      	
+
       	<div class="large-3 columns">
 	      	<div class="negative">
 	        	<span class="smallLabel">What's New</span>
 	        	<?php print render($page['HomepageWhatsNew']); ?>
 	      	</div>
       	</div>
-      	
+
 	  </div>
-	  
+
 	  <div class="row">
 	  	<div class="large-9 columns">
 		  	<div class="negative">
@@ -115,23 +115,23 @@
 	        	<?php print views_embed_view('homepage', 'block_1'); ?>
 		  	</div>
       	</div>
-      	
+
       	<div class="large-3 columns">
 	      	<div class="negative">
-	        	<span class="smallLabel">Hot Jobs</span>
+	        	<span class="smallLabel">Featured Jobs</span>
 			  	<?php print views_embed_view('homepage', 'block_2'); ?>
 	      	</div>
       	</div>
-      	
+
 	  </div>
-	  
+
 	</div>
 
   <!--/.l-main-->
 
-    
+
 <?php include(drupal_get_path('theme', 'aawdc_desktop') . '/templates/includes/footer.php'); ?>
-    
+
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>

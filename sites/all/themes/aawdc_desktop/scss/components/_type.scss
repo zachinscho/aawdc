@@ -41,11 +41,12 @@ h1 {
 
 body {
 	font-size: 15px;
-	@extend .robotoRegular;
+	font-family: inherit;
+  font-weight: normal;
 }
 
 a {
-	@extend .robotoCondensedRegular;
+	//@extend .robotoCondensedRegular;
 }
 .smallLabel {
 	text-transform: uppercase;
@@ -54,7 +55,7 @@ a {
 	color: dkGray;
 	float: right;
 	display: block;
-		
+
 }
 
 .title {}
