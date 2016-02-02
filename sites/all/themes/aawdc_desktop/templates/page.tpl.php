@@ -50,15 +50,15 @@
     	</section>
 	</div>
 
-
-	<div class="calloutHero">
-		<section class="row">
-			<div class="large-12 columns">
-        		<p><?php print $calloutText; ?></p>
-      </div>
-    </section>
-	</div>
-
+  <?php if ($calloutText): ?>
+  	<div class="calloutHero">
+  		<section class="row">
+  			<div class="large-12 columns">
+          		<p><?php print $calloutText; ?></p>
+        </div>
+      </section>
+  	</div>
+  <?php endif; ?>
 
 	<div class="mainWrapper">
 	<main role="main" class="row l-main">
