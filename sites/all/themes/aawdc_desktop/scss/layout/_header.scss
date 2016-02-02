@@ -10,28 +10,29 @@
 		background-image: url(../images/AAWDClogo.png);
 		background-size: contain;
 		background-repeat: no-repeat;
-		
+
 	}
 }
 
 .imageHero {
 	clear: both;
-	background-image: url(../images/test.jpg);
+	background-image: url(http://dev-aawdc.pantheon.io/sites/default/files/server.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-top: $basePaddingHuge;
 	padding-bottom: $basePaddingHuge;
 	border-top-left-radius:10%;
-    border-top-right-radius:10%;
-	
+  border-top-right-radius:10%;
+	background-position: center center;
+
 	h1 {
 		color: $white;
 		@extend .robotoDarkest;
 		@extend .fontRidicLarge;
-		text-transform: uppercase;	
+		text-transform: uppercase;
 		line-height: 60px;
 	}
-	
+
 }
 
 .calloutTryp {
@@ -41,7 +42,7 @@
 	h3 {
 		color: $dkGray;
 		@extend .robotoCondensedRegular;
-		@extend .fontLarge;	
+		@extend .fontLarge;
 		line-height: 27px;
 	}
 	span {
@@ -78,7 +79,7 @@
 	padding-bottom: $basePaddingLarge;
 		p {
 			@extend .robotoCondensedRegular;
-			@extend .fontMedium;	
+			@extend .fontMedium;
 			margin: 0;
 			padding: 0;
 			line-height: 1em;

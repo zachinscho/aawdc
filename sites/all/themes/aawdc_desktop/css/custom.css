@@ -7380,33 +7380,34 @@ a.th {
 /* line 17, ../scss/layout/_header.scss */
 .imageHero {
   clear: both;
-  background-image: url(../images/test.jpg);
+  background-image: url(http://dev-aawdc.pantheon.io/sites/default/files/server.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 50px;
   border-top-left-radius: 10%;
   border-top-right-radius: 10%;
+  background-position: center center;
 }
-/* line 27, ../scss/layout/_header.scss */
+/* line 28, ../scss/layout/_header.scss */
 .imageHero h1 {
   color: #ffffff;
   text-transform: uppercase;
   line-height: 60px;
 }
 
-/* line 37, ../scss/layout/_header.scss */
+/* line 38, ../scss/layout/_header.scss */
 .calloutTryp {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 41, ../scss/layout/_header.scss */
+/* line 42, ../scss/layout/_header.scss */
 .calloutTryp h3 {
   color: #797979;
   line-height: 27px;
 }
-/* line 47, ../scss/layout/_header.scss */
+/* line 48, ../scss/layout/_header.scss */
 .calloutTryp span {
   display: block;
   max-width: 200px;
@@ -7414,21 +7415,21 @@ a.th {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 53, ../scss/layout/_header.scss */
+/* line 54, ../scss/layout/_header.scss */
 .calloutTryp span.career {
   background-image: url(../images/step.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 59, ../scss/layout/_header.scss */
+/* line 60, ../scss/layout/_header.scss */
 .calloutTryp span.workforce {
   background-image: url(../images/buildings.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 65, ../scss/layout/_header.scss */
+/* line 66, ../scss/layout/_header.scss */
 .calloutTryp span.involved {
   background-image: url(../images/hand.png);
   background-size: 20%;
@@ -7436,14 +7437,14 @@ a.th {
   background-position: center center;
 }
 
-/* line 74, ../scss/layout/_header.scss */
+/* line 75, ../scss/layout/_header.scss */
 .calloutHero {
   background: #797979;
   color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 79, ../scss/layout/_header.scss */
+/* line 80, ../scss/layout/_header.scss */
 .calloutHero p {
   margin: 0;
   padding: 0;
