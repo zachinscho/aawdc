@@ -50,7 +50,7 @@
     	</section>
 	</div>
 
-  <?php if ($calloutText): ?>
+  <?php if (isset($calloutText)): ?>
   	<div class="calloutHero">
   		<section class="row">
   			<div class="large-12 columns">
