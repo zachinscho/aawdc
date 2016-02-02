@@ -33,8 +33,8 @@
     </section>
     <!--/.l-help -->
   <?php endif; ?>
-  
-  <?php 
+
+  <?php
 	// Print hero image as background if present
 	  if($heroImage != '') { ?>
 	  <div class="imageHero" style="background: url(<?php print $heroImage ?>); background-repeat: no-repeat; background-size: cover;">
@@ -49,17 +49,17 @@
       		</div>
     	</section>
 	</div>
-	
-	
+
+
 	<div class="calloutHero">
 		<section class="row">
 			<div class="large-12 columns">
-        		<?php print render($page['MissionStatement']); ?>
-      		</div>
-    	</section>
+        		<p><?php print $calloutText; ?></p>
+      </div>
+    </section>
 	</div>
-	
-	
+
+
 	<div class="mainWrapper">
 	<main role="main" class="row l-main">
     <div class="<?php print $main_grid; ?> main columns">
@@ -75,7 +75,7 @@
         <?php print render($tabs); ?>
         <?php if (!empty($tabs2)): print render($tabs2); endif; ?>
       <?php endif; ?>
-      
+
     <!--.l-BC-->
     <section class="l-BC row">
       <div class="large-12 columns">
@@ -102,20 +102,19 @@
     <?php endif; ?>
   </main>
 
-	  
-	
-	  
-	  
-	  
+
+
+
+
+
 	</div>
 
   <!--/.l-main-->
 
-    
+
 <?php include(drupal_get_path('theme', 'aawdc_desktop') . '/templates/includes/footer.php'); ?>
-    
+
 
   <?php if ($messages && $zurb_foundation_messages_modal): print $messages; endif; ?>
 </div>
 <!--/.page -->
-

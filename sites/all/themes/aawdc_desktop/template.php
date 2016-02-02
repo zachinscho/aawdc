@@ -186,16 +186,23 @@ function aawdc_desktop_css_alter(&$css) {
    }
   }
  }
- 
+
  function aawdc_desktop_preprocess_page(&$vars) {
   $vars['heroImage'] = '';
   // Get the object and do some other checks based on what you need.
   if (($node = menu_get_object()) && $node->type) {
     $view = node_view($node);
+    // Hero Image
     if(isset($view['field_image']['#items'][0]['uri'])) {
     	$vars['heroImage'] = file_create_url($view['field_image']['#items'][0]['uri']);
     } else {
 	    $vars['heroImage'] = '';
+    }
+    // Statement
+    if(isset($view['field_callout_text']['#items'][0]['safe_value'])) {
+    	$vars['calloutText'] = $view['field_callout_text']['#items'][0]['safe_value'];
+    } else {
+	    $vars['calloutText'] = '';
     }
   }
 }
