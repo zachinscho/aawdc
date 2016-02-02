@@ -37,7 +37,7 @@
   <?php
 	// Print hero image as background if present
 	  if($heroImage != '') { ?>
-	  <div class="imageHero" style="background: url(<?php print $heroImage ?>); background-repeat: no-repeat; background-size: cover;">
+	  <div class="imageHero" style="background: url(<?php print $heroImage ?>); background-repeat: no-repeat; background-size: cover; background-position: center center;">
   <?php } else { ?>
 	  <div class="imageHero">
   <?php } ?>
