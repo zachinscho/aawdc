@@ -3,14 +3,17 @@
 .l-header {
 	clear: both;
 	form {
-			width: 300px;
+			width: 100%;
+			@media #{$small} {
+				width: 300px;
+			}
 			float: right;
 			padding:10px;
 			input[type=text] {
 				border:1px solid $red;
 				color: $dkGray;
 				float: left;
-				width: 70%;
+				width: 69%;
 			}
 			button {
 				border: none;
@@ -18,8 +21,10 @@
 				background: $red;
 				box-shadow:none;
 				float: right;
-				width: 25%;
-				font-size: 12px;
+				width: 30%;
+				font-size: 13px;
+				line-height: 13px;
+				text-transform: uppercase;
 				border-radius: 0px;
 				&:hover {
 					background: $dkRed;
@@ -27,15 +32,15 @@
 				}
 			}
 		}
-		
+
 	nav {
 	float: right;
 	font-family: "Roboto Condensed";
 	font-weight: 400;
-	z-index: 10000;	
-		
-		//menu 
-		
+	z-index: 10000;
+
+		//menu
+
 		ul {
 		    font-family: Arial, Verdana;
 		    font-size: 14px;
@@ -66,7 +71,7 @@
 		li:hover ul {
 		    display: block;
 		    position: absolute;
-		    z-index: 10000;	
+		    z-index: 10000;
 		}
 		li:hover li {
 		    float: none;

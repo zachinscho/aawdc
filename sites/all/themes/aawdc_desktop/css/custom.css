@@ -7393,21 +7393,28 @@ a.th {
 .imageHero h1 {
   color: #ffffff;
   text-transform: uppercase;
-  line-height: 60px;
+  line-height: 30px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 28, ../scss/layout/_header.scss */
+  .imageHero h1 {
+    font-size: 78px;
+    line-height: 60px;
+  }
 }
 
-/* line 38, ../scss/layout/_header.scss */
+/* line 42, ../scss/layout/_header.scss */
 .calloutTryp {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 42, ../scss/layout/_header.scss */
+/* line 46, ../scss/layout/_header.scss */
 .calloutTryp h3 {
   color: #797979;
   line-height: 27px;
 }
-/* line 48, ../scss/layout/_header.scss */
+/* line 52, ../scss/layout/_header.scss */
 .calloutTryp span {
   display: block;
   max-width: 200px;
@@ -7415,21 +7422,21 @@ a.th {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 54, ../scss/layout/_header.scss */
+/* line 58, ../scss/layout/_header.scss */
 .calloutTryp span.career {
   background-image: url(../images/step.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 60, ../scss/layout/_header.scss */
+/* line 64, ../scss/layout/_header.scss */
 .calloutTryp span.workforce {
   background-image: url(../images/buildings.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 66, ../scss/layout/_header.scss */
+/* line 70, ../scss/layout/_header.scss */
 .calloutTryp span.involved {
   background-image: url(../images/hand.png);
   background-size: 20%;
@@ -7437,14 +7444,14 @@ a.th {
   background-position: center center;
 }
 
-/* line 75, ../scss/layout/_header.scss */
+/* line 79, ../scss/layout/_header.scss */
 .calloutHero {
   background: #797979;
   color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 80, ../scss/layout/_header.scss */
+/* line 84, ../scss/layout/_header.scss */
 .calloutHero p {
   margin: 0;
   padding: 0;
@@ -7780,12 +7787,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 34, ../scss/components/_type.scss */
-.fontRidicLarge, .imageHero h1 {
+.fontRidicLarge {
   font-size: 78px;
 }
 
 /* line 35, ../scss/components/_type.scss */
-.fontLarge, .calloutTryp h3 {
+.fontLarge, .imageHero h1, .calloutTryp h3 {
   font-size: 32px;
 }
 
@@ -9572,41 +9579,49 @@ input[type=checkbox] {
 }
 /* line 5, ../scss/components/_menu.scss */
 .l-header form {
-  width: 300px;
+  width: 100%;
   float: right;
   padding: 10px;
 }
-/* line 9, ../scss/components/_menu.scss */
+@media only screen and (min-width: 768px) {
+  /* line 5, ../scss/components/_menu.scss */
+  .l-header form {
+    width: 300px;
+  }
+}
+/* line 12, ../scss/components/_menu.scss */
 .l-header form input[type=text] {
   border: 1px solid #e24137;
   color: #797979;
   float: left;
-  width: 70%;
+  width: 69%;
 }
-/* line 15, ../scss/components/_menu.scss */
+/* line 18, ../scss/components/_menu.scss */
 .l-header form button {
   border: none;
   color: #ffffff;
   background: #e24137;
   box-shadow: none;
   float: right;
-  width: 25%;
-  font-size: 12px;
+  width: 30%;
+  font-size: 13px;
+  line-height: 13px;
+  text-transform: uppercase;
   border-radius: 0px;
 }
-/* line 24, ../scss/components/_menu.scss */
+/* line 29, ../scss/components/_menu.scss */
 .l-header form button:hover {
   background: #701610;
   color: #ffffff;
 }
-/* line 31, ../scss/components/_menu.scss */
+/* line 36, ../scss/components/_menu.scss */
 .l-header nav {
   float: right;
   font-family: "Roboto Condensed";
   font-weight: 400;
   z-index: 10000;
 }
-/* line 39, ../scss/components/_menu.scss */
+/* line 44, ../scss/components/_menu.scss */
 .l-header nav ul {
   font-family: Arial, Verdana;
   font-size: 14px;
@@ -9614,17 +9629,17 @@ input[type=checkbox] {
   padding: 0;
   list-style: none;
 }
-/* line 46, ../scss/components/_menu.scss */
+/* line 51, ../scss/components/_menu.scss */
 .l-header nav ul li {
   display: block;
   position: relative;
   float: left;
 }
-/* line 51, ../scss/components/_menu.scss */
+/* line 56, ../scss/components/_menu.scss */
 .l-header nav li ul {
   display: none;
 }
-/* line 54, ../scss/components/_menu.scss */
+/* line 59, ../scss/components/_menu.scss */
 .l-header nav ul li a {
   display: block;
   text-decoration: none;
@@ -9634,26 +9649,26 @@ input[type=checkbox] {
   margin-left: 1px;
   white-space: nowrap;
 }
-/* line 63, ../scss/components/_menu.scss */
+/* line 68, ../scss/components/_menu.scss */
 .l-header nav ul li a:hover {
   color: #000;
 }
-/* line 66, ../scss/components/_menu.scss */
+/* line 71, ../scss/components/_menu.scss */
 .l-header nav li:hover ul {
   display: block;
   position: absolute;
   z-index: 10000;
 }
-/* line 71, ../scss/components/_menu.scss */
+/* line 76, ../scss/components/_menu.scss */
 .l-header nav li:hover li {
   float: none;
   font-size: 11px;
 }
-/* line 75, ../scss/components/_menu.scss */
+/* line 80, ../scss/components/_menu.scss */
 .l-header nav li:hover a {
   background: #ccd0c5;
 }
-/* line 76, ../scss/components/_menu.scss */
+/* line 81, ../scss/components/_menu.scss */
 .l-header nav li:hover li a:hover {
   background: #ccd0c5;
 }
