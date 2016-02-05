@@ -44,11 +44,11 @@
 				margin-bottom: 0px;
 			}
 		}
-		
+
 	}
-	
-	
-	
+
+
+
 	.topFacts {
 		.negative {
 			@extend .robotoCondensedRegular;
@@ -63,9 +63,9 @@
 			}
 			p {
 				margin-bottom: 0px;
-				
+
 			}
-			
+
 			h6 {
 				font-size: .5em;
 				color: $dkGray;
@@ -83,9 +83,13 @@
 
 .main {
 	background: $white;
+	padding-top: 15px;
+	overflow: auto;
 }
 
 .l-sidebar-second {
-	//background: $white;
+	margin-top: 20px;
+	@media #{$small} {
+		margin-top: 0px;
+	}
 }
-

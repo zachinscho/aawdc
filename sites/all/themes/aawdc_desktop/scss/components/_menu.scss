@@ -1,85 +1,152 @@
 // menu/header/etc
-
 .l-header {
-	clear: both;
-	form {
+  clear: both;
+  form {
+    width: 100%;
+    @media #{$small} {
+      width: 300px;
+    }
+    float: right;
+    padding: 10px;
+    input[type=text] {
+      border: 1px solid $red;
+      color: $dkGray;
+      float: left;
+      width: 69%;
+    }
+    button {
+      border: none;
+      color: $white;
+      background: $red;
+      box-shadow: none;
+      float: right;
+      width: 30%;
+      font-size: 13px;
+      line-height: 13px;
+      text-transform: uppercase;
+      border-radius: 0;
+      &:hover {
+        background: $dkRed;
+        color: $white;
+      }
+    }
+  }
+  nav {
+		width: 100%;
+		@media #{$small} {
+			width: auto;
+		}
+    float: right;
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    z-index: 10000;
+
+		.menu-toggle {
+			display: block;
+			padding: 20px;
+			background-color: $red;
+			color: #fff;
 			width: 100%;
 			@media #{$small} {
-				width: 300px;
-			}
-			float: right;
-			padding:10px;
-			input[type=text] {
-				border:1px solid $red;
-				color: $dkGray;
-				float: left;
-				width: 69%;
-			}
-			button {
-				border: none;
-				color: $white;
-				background: $red;
-				box-shadow:none;
-				float: right;
-				width: 30%;
-				font-size: 13px;
-				line-height: 13px;
-				text-transform: uppercase;
-				border-radius: 0px;
-				&:hover {
-					background: $dkRed;
-					color: $white;
-				}
+				display: none;
 			}
 		}
 
-	nav {
-	float: right;
-	font-family: "Roboto Condensed";
-	font-weight: 400;
-	z-index: 10000;
-
-		//menu
-
+		// menu mobile
 		ul {
-		    font-family: Arial, Verdana;
-		    font-size: 14px;
-		    margin: 0;
-		    padding: 0;
-		    list-style: none;
+			height: 0px;
+			width: 100%;
+			overflow: hidden;
+			&.show {
+				height: auto;
+			}
+			margin: 0;
+			padding: 0;
+			background: $dkTan;
+			li {
+				list-style-type: none;
+				margin: 0;
+				a {
+					display: block;
+					padding: 20px;
+					&:hover {
+						background: darken($dkTan, 5%);
+					}
+				}
+				ul {
+					background: lighten($dkTan, 10%);
+					&.dropdown {
+					li {
+						&.show-for-small {
+							display: none !important;
+						}
+						a {
+							padding: 10px;
+							&:hover {
+								background: lighten($dkTan, 5%);
+							}
+						}
+					}
+					}
+				}
+
+			}
 		}
-		ul li {
-		    display: block;
-		    position: relative;
-		    float: left;
-		}
-		li ul {
-		    display: none;
-		}
-		ul li a {
-		    display: block;
-		    text-decoration: none;
-		    color: $blue;
-		    padding: 5px 15px 5px 15px;
-		    background: $white;
-		    margin-left: 1px;
-		    white-space: nowrap;
-		}
-		ul li a:hover {
-		color: #000;
-		}
-		li:hover ul {
-		    display: block;
-		    position: absolute;
-		    z-index: 10000;
-		}
-		li:hover li {
-		    float: none;
-		    font-size: 11px;
-		}
-		li:hover a { background: $dkTan; }
-		li:hover li a:hover {
-		    background: $dkTan;
-		}
-	}
+
+
+    // menu desktop
+    @media #{$small} {
+      ul {
+				background-color: #fff;
+				overflow: visible;
+				width: auto;
+				height: auto;
+        font-family: Arial, Verdana;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: block;
+          position: relative;
+          float: left;
+          ul {
+            display: none;
+          }
+          a {
+            display: block;
+            text-decoration: none;
+            color: $blue;
+            padding: 5px 15px;
+            background: $white;
+            margin-left: 1px;
+            white-space: nowrap;
+            &:hover {
+              color: #000;
+            }
+          }
+          &:hover {
+            ul {
+              display: block;
+              position: absolute;
+              z-index: 10000;
+              ul {
+                position: relative;
+              }
+              li {
+                float: none;
+                font-size: 11px;
+              }
+              a {
+                background: $dkTan;
+                &:hover {
+                  background: $dkTan;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

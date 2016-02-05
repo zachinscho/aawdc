@@ -5,6 +5,7 @@
   	<a href="<?php print $front_page; ?>" class="logo"></a>
 
          <nav>
+           <a class="menu-toggle"><i class="fa fa-bars"></i></a>
           <?php if ($top_bar_main_menu) :?>
             <?php print $top_bar_main_menu; ?>
           <?php endif; ?>

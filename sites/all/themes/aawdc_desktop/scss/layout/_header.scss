@@ -8,13 +8,18 @@
 
 	a.logo {
 		display: block;
-		float: left;
+		margin-left: auto;
+		margin-right: auto;
 		height:100px;
 		width: 300px;
-		//background: aqua;
 		background-image: url(../images/AAWDClogo.png);
 		background-size: contain;
 		background-repeat: no-repeat;
+		@media #{$small} {
+      float: left;
+			margin-left: 0;
+			margin-right: 0;
+    }
 
 	}
 }

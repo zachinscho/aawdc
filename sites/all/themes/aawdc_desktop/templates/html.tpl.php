@@ -60,7 +60,7 @@
 	<script>try{Typekit.load();}catch(e){}</script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div class="skip-link">
@@ -70,10 +70,5 @@
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <?php print _zurb_foundation_add_reveals(); ?>
-  <script>
-    (function ($, Drupal, window, document, undefined) {
-      $(document).foundation();
-    })(jQuery, Drupal, this, this.document);
-  </script>
 </body>
 </html>

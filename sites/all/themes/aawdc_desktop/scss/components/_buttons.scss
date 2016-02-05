@@ -5,7 +5,7 @@
 
 .button, .form-submit {
 	background-color: $blue;
-	font-size: 1.5em;
+	font-size: 1em;
 	color: $dkGray;
 	font-weight: 400;
 	border-radius: $global-radius;
@@ -16,8 +16,8 @@
 		background-color: darken($blue, 4);
 		color: $black;
 	}
-	
-	
+
+
 }
 .button.secondary {
 	background: $dkBlue;
@@ -34,12 +34,12 @@
 button {
 		margin-bottom: 0px;
 	}
-	
+
 	.button-group {
 .button.secondary {
-	
+
 	margin-right: 5px;
-}	
+}
 }
 .button.secondary {
 	color: $dkGray;

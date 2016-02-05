@@ -1,6 +1,6 @@
-.view-staff {
+.view-staff, .view-success-stories, .view-news {
   h3 {
-  margin: 20px;
+    margin: 20px;
   }
 
   ul {
@@ -26,6 +26,13 @@
         margin: 0;
         padding: 0;
       }
+      @media #{$small} {
+      img {
+        float: left;
+        margin-right: 20px;
+      }
+      }
+
     }
   }
 }

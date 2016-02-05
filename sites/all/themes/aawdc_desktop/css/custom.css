@@ -7376,15 +7376,24 @@ a.th {
 /* line 9, ../scss/layout/_header.scss */
 .l-header a.logo {
   display: block;
-  float: left;
+  margin-left: auto;
+  margin-right: auto;
   height: 100px;
   width: 300px;
   background-image: url(../images/AAWDClogo.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
+@media only screen and (min-width: 768px) {
+  /* line 9, ../scss/layout/_header.scss */
+  .l-header a.logo {
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 
-/* line 22, ../scss/layout/_header.scss */
+/* line 27, ../scss/layout/_header.scss */
 .imageHero {
   clear: both;
   background-image: url(http://dev-aawdc.pantheon.io/sites/default/files/server.jpg);
@@ -7396,32 +7405,32 @@ a.th {
   border-top-right-radius: 10%;
   background-position: center center;
 }
-/* line 33, ../scss/layout/_header.scss */
+/* line 38, ../scss/layout/_header.scss */
 .imageHero h1 {
   color: #ffffff;
   text-transform: uppercase;
   line-height: 30px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 33, ../scss/layout/_header.scss */
+  /* line 38, ../scss/layout/_header.scss */
   .imageHero h1 {
     font-size: 78px;
     line-height: 60px;
   }
 }
 
-/* line 46, ../scss/layout/_header.scss */
+/* line 51, ../scss/layout/_header.scss */
 .calloutTryp {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 50, ../scss/layout/_header.scss */
+/* line 55, ../scss/layout/_header.scss */
 .calloutTryp h3 {
   color: #797979;
   line-height: 27px;
 }
-/* line 56, ../scss/layout/_header.scss */
+/* line 61, ../scss/layout/_header.scss */
 .calloutTryp span {
   display: block;
   max-width: 200px;
@@ -7429,21 +7438,21 @@ a.th {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 62, ../scss/layout/_header.scss */
+/* line 67, ../scss/layout/_header.scss */
 .calloutTryp span.career {
   background-image: url(../images/step.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 68, ../scss/layout/_header.scss */
+/* line 73, ../scss/layout/_header.scss */
 .calloutTryp span.workforce {
   background-image: url(../images/buildings.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 74, ../scss/layout/_header.scss */
+/* line 79, ../scss/layout/_header.scss */
 .calloutTryp span.involved {
   background-image: url(../images/hand.png);
   background-size: 20%;
@@ -7451,14 +7460,14 @@ a.th {
   background-position: center center;
 }
 
-/* line 83, ../scss/layout/_header.scss */
+/* line 88, ../scss/layout/_header.scss */
 .calloutHero {
   background: #797979;
   color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 88, ../scss/layout/_header.scss */
+/* line 93, ../scss/layout/_header.scss */
 .calloutHero p {
   margin: 0;
   padding: 0;
@@ -7543,6 +7552,19 @@ a.th {
 /* line 84, ../scss/layout/_main.scss */
 .main {
   background: #ffffff;
+  padding-top: 15px;
+  overflow: auto;
+}
+
+/* line 90, ../scss/layout/_main.scss */
+.l-sidebar-second {
+  margin-top: 20px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 90, ../scss/layout/_main.scss */
+  .l-sidebar-second {
+    margin-top: 0px;
+  }
 }
 
 /* line 4, ../scss/layout/_aside.scss */
@@ -7705,7 +7727,7 @@ a.th {
 /* line 6, ../scss/components/_buttons.scss */
 .button, .form-submit {
   background-color: #639DC8;
-  font-size: 1.5em;
+  font-size: 1em;
   color: #797979;
   font-weight: 400;
   border-radius: 5px;
@@ -9580,30 +9602,30 @@ input[type=checkbox] {
   content: "\f21a";
 }
 
-/* line 3, ../scss/components/_menu.scss */
+/* line 2, ../scss/components/_menu.scss */
 .l-header {
   clear: both;
 }
-/* line 5, ../scss/components/_menu.scss */
+/* line 4, ../scss/components/_menu.scss */
 .l-header form {
   width: 100%;
   float: right;
   padding: 10px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 5, ../scss/components/_menu.scss */
+  /* line 4, ../scss/components/_menu.scss */
   .l-header form {
     width: 300px;
   }
 }
-/* line 12, ../scss/components/_menu.scss */
+/* line 11, ../scss/components/_menu.scss */
 .l-header form input[type=text] {
   border: 1px solid #e24137;
   color: #797979;
   float: left;
   width: 69%;
 }
-/* line 18, ../scss/components/_menu.scss */
+/* line 17, ../scss/components/_menu.scss */
 .l-header form button {
   border: none;
   color: #ffffff;
@@ -9614,100 +9636,181 @@ input[type=checkbox] {
   font-size: 13px;
   line-height: 13px;
   text-transform: uppercase;
-  border-radius: 0px;
+  border-radius: 0;
 }
-/* line 29, ../scss/components/_menu.scss */
+/* line 28, ../scss/components/_menu.scss */
 .l-header form button:hover {
   background: #701610;
   color: #ffffff;
 }
-/* line 36, ../scss/components/_menu.scss */
+/* line 34, ../scss/components/_menu.scss */
 .l-header nav {
+  width: 100%;
   float: right;
   font-family: "Roboto Condensed";
   font-weight: 400;
   z-index: 10000;
 }
-/* line 44, ../scss/components/_menu.scss */
-.l-header nav ul {
-  font-family: Arial, Verdana;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+@media only screen and (min-width: 768px) {
+  /* line 34, ../scss/components/_menu.scss */
+  .l-header nav {
+    width: auto;
+  }
 }
-/* line 51, ../scss/components/_menu.scss */
-.l-header nav ul li {
+/* line 44, ../scss/components/_menu.scss */
+.l-header nav .menu-toggle {
   display: block;
-  position: relative;
-  float: left;
+  padding: 20px;
+  background-color: #e24137;
+  color: #fff;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  /* line 44, ../scss/components/_menu.scss */
+  .l-header nav .menu-toggle {
+    display: none;
+  }
 }
 /* line 56, ../scss/components/_menu.scss */
-.l-header nav li ul {
-  display: none;
+.l-header nav ul {
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #ccd0c5;
 }
-/* line 59, ../scss/components/_menu.scss */
+/* line 60, ../scss/components/_menu.scss */
+.l-header nav ul.show {
+  height: auto;
+}
+/* line 66, ../scss/components/_menu.scss */
+.l-header nav ul li {
+  list-style-type: none;
+  margin: 0;
+}
+/* line 69, ../scss/components/_menu.scss */
 .l-header nav ul li a {
   display: block;
-  text-decoration: none;
-  color: #639DC8;
-  padding: 5px 15px 5px 15px;
-  background: #ffffff;
-  margin-left: 1px;
-  white-space: nowrap;
+  padding: 20px;
 }
-/* line 68, ../scss/components/_menu.scss */
+/* line 72, ../scss/components/_menu.scss */
 .l-header nav ul li a:hover {
-  color: #000;
-}
-/* line 71, ../scss/components/_menu.scss */
-.l-header nav li:hover ul {
-  display: block;
-  position: absolute;
-  z-index: 10000;
+  background: #c0c5b7;
 }
 /* line 76, ../scss/components/_menu.scss */
-.l-header nav li:hover li {
-  float: none;
-  font-size: 11px;
+.l-header nav ul li ul {
+  background: #e5e7e1;
 }
 /* line 80, ../scss/components/_menu.scss */
-.l-header nav li:hover a {
-  background: #ccd0c5;
+.l-header nav ul li ul.dropdown li.show-for-small {
+  display: none !important;
 }
-/* line 81, ../scss/components/_menu.scss */
-.l-header nav li:hover li a:hover {
-  background: #ccd0c5;
+/* line 83, ../scss/components/_menu.scss */
+.l-header nav ul li ul.dropdown li a {
+  padding: 10px;
+}
+/* line 85, ../scss/components/_menu.scss */
+.l-header nav ul li ul.dropdown li a:hover {
+  background: #d8dbd3;
+}
+@media only screen and (min-width: 768px) {
+  /* line 99, ../scss/components/_menu.scss */
+  .l-header nav ul {
+    background-color: #fff;
+    overflow: visible;
+    width: auto;
+    height: auto;
+    font-family: Arial, Verdana;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  /* line 109, ../scss/components/_menu.scss */
+  .l-header nav ul li {
+    display: block;
+    position: relative;
+    float: left;
+  }
+  /* line 113, ../scss/components/_menu.scss */
+  .l-header nav ul li ul {
+    display: none;
+  }
+  /* line 116, ../scss/components/_menu.scss */
+  .l-header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #639DC8;
+    padding: 5px 15px;
+    background: #ffffff;
+    margin-left: 1px;
+    white-space: nowrap;
+  }
+  /* line 124, ../scss/components/_menu.scss */
+  .l-header nav ul li a:hover {
+    color: #000;
+  }
+  /* line 129, ../scss/components/_menu.scss */
+  .l-header nav ul li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 10000;
+  }
+  /* line 133, ../scss/components/_menu.scss */
+  .l-header nav ul li:hover ul ul {
+    position: relative;
+  }
+  /* line 136, ../scss/components/_menu.scss */
+  .l-header nav ul li:hover ul li {
+    float: none;
+    font-size: 11px;
+  }
+  /* line 140, ../scss/components/_menu.scss */
+  .l-header nav ul li:hover ul a {
+    background: #ccd0c5;
+  }
+  /* line 142, ../scss/components/_menu.scss */
+  .l-header nav ul li:hover ul a:hover {
+    background: #ccd0c5;
+  }
 }
 
 /* line 2, ../scss/components/_views.scss */
-.view-staff h3 {
+.view-staff h3, .view-success-stories h3, .view-news h3 {
   margin: 20px;
 }
 /* line 6, ../scss/components/_views.scss */
-.view-staff ul {
+.view-staff ul, .view-success-stories ul, .view-news ul {
   margin: 10px;
   padding: 0;
 }
 /* line 10, ../scss/components/_views.scss */
-.view-staff ul li {
+.view-staff ul li, .view-success-stories ul li, .view-news ul li {
   margin: 0;
   padding: 20px;
   list-style-type: none;
   border-bottom: 1px solid #ccc;
 }
 /* line 16, ../scss/components/_views.scss */
-.view-staff ul li:last-child {
+.view-staff ul li:last-child, .view-success-stories ul li:last-child, .view-news ul li:last-child {
   border-bottom: 0px;
 }
 /* line 20, ../scss/components/_views.scss */
-.view-staff ul li h4 {
+.view-staff ul li h4, .view-success-stories ul li h4, .view-news ul li h4 {
   color: #701610;
   margin: 0;
   padding: 0;
 }
 /* line 25, ../scss/components/_views.scss */
-.view-staff ul li p {
+.view-staff ul li p, .view-success-stories ul li p, .view-news ul li p {
   margin: 0;
   padding: 0;
+}
+@media only screen and (min-width: 768px) {
+  /* line 30, ../scss/components/_views.scss */
+  .view-staff ul li img, .view-success-stories ul li img, .view-news ul li img {
+    float: left;
+    margin-right: 20px;
+  }
 }
