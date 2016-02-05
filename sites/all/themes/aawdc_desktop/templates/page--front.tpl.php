@@ -34,7 +34,7 @@
   <?php endif; ?>
 
 
-	<div class="imageHero">
+	<div class="imageHero" style="background: url(<?php aawdc_desktop_random_image(); ?>); background-repeat: no-repeat; background-size: cover; background-position: center center;">
 		<section class="row">
 			<div class="large-7 columns">
         		<h1>Building Your Success</h1>

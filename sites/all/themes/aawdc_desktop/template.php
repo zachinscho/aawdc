@@ -207,6 +207,19 @@ function aawdc_desktop_css_alter(&$css) {
   }
 }
 
+function aawdc_desktop_random_image() {
+  $items = Array(
+  'http://dev-aawdc.pantheon.io/sites/default/files/server.jpg',
+  'http://dev-aawdc.pantheon.io/sites/default/files/default_images/switch_0.jpg',
+  'http://dev-aawdc.pantheon.io/sites/default/files/reception.jpg',
+  'http://dev-aawdc.pantheon.io/sites/default/files/hospital.jpg',
+  'http://dev-aawdc.pantheon.io/sites/default/files/construction.jpg',
+  'http://dev-aawdc.pantheon.io/sites/default/files/shipping.jpg',
+  'http://dev-aawdc.pantheon.io/sites/default/files/airport.jpg'
+  );
+  echo $items[array_rand($items)];
+}
+
 /**
  * Implements hook_js_alter().
  */
