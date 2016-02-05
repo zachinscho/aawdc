@@ -9807,8 +9807,12 @@ input[type=checkbox] {
   margin: 0;
   padding: 0;
 }
+/* line 29, ../scss/components/_views.scss */
+.view-staff ul li .button, .view-success-stories ul li .button, .view-news ul li .button {
+  margin-top: 10px;
+}
 @media only screen and (min-width: 768px) {
-  /* line 30, ../scss/components/_views.scss */
+  /* line 33, ../scss/components/_views.scss */
   .view-staff ul li img, .view-success-stories ul li img, .view-news ul li img {
     float: left;
     margin-right: 20px;
