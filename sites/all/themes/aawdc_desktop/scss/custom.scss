@@ -25,7 +25,7 @@
  * - https://drupal.org/node/1887922
  * - http://smacss.com/
  */
- 
+
 @import "settings";
 // Base
 //
@@ -57,6 +57,7 @@
 @import "components/forms";
 @import "components/foundation-icons";
 @import "components/menu";
+@import "components/views";
 
 // Themes
 @import "theme/home";

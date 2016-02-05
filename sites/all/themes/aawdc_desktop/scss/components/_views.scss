@@ -1,0 +1,31 @@
+.view-staff {
+  h3 {
+  margin: 20px;
+  }
+
+  ul {
+    margin: 10px;
+    padding: 0;
+
+    li {
+      margin: 0;
+      padding: 20px;
+      list-style-type: none;
+      border-bottom: 1px solid #ccc;
+
+      &:last-child {
+        border-bottom: 0px;
+      }
+
+      h4 {
+        color: $dkRed;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}

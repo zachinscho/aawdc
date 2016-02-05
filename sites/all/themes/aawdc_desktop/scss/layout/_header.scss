@@ -1,6 +1,11 @@
 // Non-modular or client styles for .l-header region.
 
 .l-header {
+	margin-top: 30px;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+
 	a.logo {
 		display: block;
 		float: left;
@@ -28,7 +33,6 @@
 	h1 {
 		color: $white;
 		@extend .robotoDarkest;
-		@extend .fontLarge;
 		text-transform: uppercase;
 		line-height: 30px;
 		@media #{$small} {

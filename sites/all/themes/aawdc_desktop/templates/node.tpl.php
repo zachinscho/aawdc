@@ -79,14 +79,14 @@
   <div class="hideRendered">
   <?php print render($content['field_icon']); ?>
   <?php print render($content['field_icon_color']); ?>
-  </div>	  
+  </div>
 
 <article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
 
   <?php print render($title_prefix); ?>
 
-      
+
   <?php if (!$page): ?>
     <?php if (!$page): ?>
       <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
@@ -109,6 +109,7 @@
     hide($content['comments']);
     hide($content['links']);
     hide($content['field_tags']);
+    hide($content['field_callout_text']);
     print render($content);
   ?>
 

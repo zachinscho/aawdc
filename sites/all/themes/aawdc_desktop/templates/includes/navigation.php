@@ -1,6 +1,7 @@
  <!--.l-header -->
   <header class="l-header">
 
+
   	<a href="<?php print $front_page; ?>" class="logo"></a>
 
          <nav>

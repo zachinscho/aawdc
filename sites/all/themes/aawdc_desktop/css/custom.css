@@ -7366,7 +7366,14 @@ a.th {
   display: inline-block;
 }
 
-/* line 4, ../scss/layout/_header.scss */
+/* line 3, ../scss/layout/_header.scss */
+.l-header {
+  margin-top: 30px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 9, ../scss/layout/_header.scss */
 .l-header a.logo {
   display: block;
   float: left;
@@ -7377,7 +7384,7 @@ a.th {
   background-repeat: no-repeat;
 }
 
-/* line 17, ../scss/layout/_header.scss */
+/* line 22, ../scss/layout/_header.scss */
 .imageHero {
   clear: both;
   background-image: url(http://dev-aawdc.pantheon.io/sites/default/files/server.jpg);
@@ -7389,32 +7396,32 @@ a.th {
   border-top-right-radius: 10%;
   background-position: center center;
 }
-/* line 28, ../scss/layout/_header.scss */
+/* line 33, ../scss/layout/_header.scss */
 .imageHero h1 {
   color: #ffffff;
   text-transform: uppercase;
   line-height: 30px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 28, ../scss/layout/_header.scss */
+  /* line 33, ../scss/layout/_header.scss */
   .imageHero h1 {
     font-size: 78px;
     line-height: 60px;
   }
 }
 
-/* line 42, ../scss/layout/_header.scss */
+/* line 46, ../scss/layout/_header.scss */
 .calloutTryp {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 46, ../scss/layout/_header.scss */
+/* line 50, ../scss/layout/_header.scss */
 .calloutTryp h3 {
   color: #797979;
   line-height: 27px;
 }
-/* line 52, ../scss/layout/_header.scss */
+/* line 56, ../scss/layout/_header.scss */
 .calloutTryp span {
   display: block;
   max-width: 200px;
@@ -7422,21 +7429,21 @@ a.th {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 58, ../scss/layout/_header.scss */
+/* line 62, ../scss/layout/_header.scss */
 .calloutTryp span.career {
   background-image: url(../images/step.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 64, ../scss/layout/_header.scss */
+/* line 68, ../scss/layout/_header.scss */
 .calloutTryp span.workforce {
   background-image: url(../images/buildings.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 70, ../scss/layout/_header.scss */
+/* line 74, ../scss/layout/_header.scss */
 .calloutTryp span.involved {
   background-image: url(../images/hand.png);
   background-size: 20%;
@@ -7444,14 +7451,14 @@ a.th {
   background-position: center center;
 }
 
-/* line 79, ../scss/layout/_header.scss */
+/* line 83, ../scss/layout/_header.scss */
 .calloutHero {
   background: #797979;
   color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 84, ../scss/layout/_header.scss */
+/* line 88, ../scss/layout/_header.scss */
 .calloutHero p {
   margin: 0;
   padding: 0;
@@ -7792,7 +7799,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 35, ../scss/components/_type.scss */
-.fontLarge, .imageHero h1, .calloutTryp h3 {
+.fontLarge, .calloutTryp h3 {
   font-size: 32px;
 }
 
@@ -9671,4 +9678,36 @@ input[type=checkbox] {
 /* line 81, ../scss/components/_menu.scss */
 .l-header nav li:hover li a:hover {
   background: #ccd0c5;
+}
+
+/* line 2, ../scss/components/_views.scss */
+.view-staff h3 {
+  margin: 20px;
+}
+/* line 6, ../scss/components/_views.scss */
+.view-staff ul {
+  margin: 10px;
+  padding: 0;
+}
+/* line 10, ../scss/components/_views.scss */
+.view-staff ul li {
+  margin: 0;
+  padding: 20px;
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+}
+/* line 16, ../scss/components/_views.scss */
+.view-staff ul li:last-child {
+  border-bottom: 0px;
+}
+/* line 20, ../scss/components/_views.scss */
+.view-staff ul li h4 {
+  color: #701610;
+  margin: 0;
+  padding: 0;
+}
+/* line 25, ../scss/components/_views.scss */
+.view-staff ul li p {
+  margin: 0;
+  padding: 0;
 }
