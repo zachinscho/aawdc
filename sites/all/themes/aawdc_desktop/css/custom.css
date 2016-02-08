@@ -9818,3 +9818,16 @@ input[type=checkbox] {
     margin-right: 20px;
   }
 }
+
+/* line 2, ../scss/theme/_global.scss */
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff,
+.calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview,
+.calendar-calendar .month-view .full td.multi-day div.monthview, .calendar-calendar .week-view .full td.multi-day div.weekview, .calendar-calendar .day-view .full td.multi-day div.dayview {
+  background: #fdd700;
+}
+/* line 6, ../scss/theme/_global.scss */
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues a, .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff a, .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues a, .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff a,
+.calendar-calendar .month-view .full td.single-day div.monthview a, .calendar-calendar .week-view .full td.single-day div.weekview a, .calendar-calendar .day-view .full td.single-day div.dayview a,
+.calendar-calendar .month-view .full td.multi-day div.monthview a, .calendar-calendar .week-view .full td.multi-day div.weekview a, .calendar-calendar .day-view .full td.multi-day div.dayview a {
+  color: #000;
+}

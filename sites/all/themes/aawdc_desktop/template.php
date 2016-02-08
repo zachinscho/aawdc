@@ -215,7 +215,8 @@ function aawdc_desktop_random_image() {
   'http://dev-aawdc.pantheon.io/sites/default/files/hospital.jpg',
   'http://dev-aawdc.pantheon.io/sites/default/files/construction.jpg',
   'http://dev-aawdc.pantheon.io/sites/default/files/shipping.jpg',
-  'http://dev-aawdc.pantheon.io/sites/default/files/airport.jpg'
+  'http://dev-aawdc.pantheon.io/sites/default/files/airport.jpg',
+  'http://dev-aawdc.pantheon.io/sites/default/files/warehouse.jpg'
   );
   echo $items[array_rand($items)];
 }
