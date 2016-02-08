@@ -209,14 +209,14 @@ function aawdc_desktop_css_alter(&$css) {
 
 function aawdc_desktop_random_image() {
   $items = Array(
-  'http://dev-aawdc.pantheon.io/sites/default/files/server.jpg',
-  'http://dev-aawdc.pantheon.io/sites/default/files/default_images/switch_0.jpg',
-  'http://dev-aawdc.pantheon.io/sites/default/files/reception.jpg',
-  'http://dev-aawdc.pantheon.io/sites/default/files/hospital.jpg',
-  'http://dev-aawdc.pantheon.io/sites/default/files/construction.jpg',
-  'http://dev-aawdc.pantheon.io/sites/default/files/shipping.jpg',
-  'http://dev-aawdc.pantheon.io/sites/default/files/airport.jpg',
-  'http://dev-aawdc.pantheon.io/sites/default/files/warehouse.jpg'
+  'http://live-aawdc.pantheon.io/sites/default/files/server.jpg',
+  'http://live-aawdc.pantheon.io/sites/default/files/default_images/switch_0.jpg',
+  'http://live-aawdc.pantheon.io/sites/default/files/reception.jpg',
+  'http://live-aawdc.pantheon.io/sites/default/files/hospital.jpg',
+  'http://live-aawdc.pantheon.io/sites/default/files/construction.jpg',
+  'http://live-aawdc.pantheon.io/sites/default/files/shipping.jpg',
+  'http://live-aawdc.pantheon.io/sites/default/files/airport.jpg',
+  'http://live-aawdc.pantheon.io/sites/default/files/warehouse.jpg'
   );
   echo $items[array_rand($items)];
 }
