@@ -9898,20 +9898,20 @@ input[type=checkbox] {
 }
 
 /* line 32, ../scss/theme/_global.scss */
-.view .date-nav-wrapper .date-nav {
+.view.view-display-id-block_1 .date-nav-wrapper .date-nav {
   height: 30px !important;
 }
 /* line 35, ../scss/theme/_global.scss */
-.view .date-nav-wrapper .date-heading h3 {
+.view.view-display-id-block_1 .date-nav-wrapper .date-heading h3 {
   font-size: 14px !important;
 }
 /* line 39, ../scss/theme/_global.scss */
-.view .date-nav-wrapper .date-prev, .view .date-nav-wrapper .date-next {
+.view.view-display-id-block_1 .date-nav-wrapper .date-prev, .view.view-display-id-block_1 .date-nav-wrapper .date-next {
   padding-right: 0px;
   padding-left: 0px;
 }
 /* line 42, ../scss/theme/_global.scss */
-.view .date-nav-wrapper .date-prev a, .view .date-nav-wrapper .date-next a {
+.view.view-display-id-block_1 .date-nav-wrapper .date-prev a, .view.view-display-id-block_1 .date-nav-wrapper .date-next a {
   display: block;
   width: 30px;
   text-align: center;
