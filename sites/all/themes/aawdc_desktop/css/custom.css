@@ -7526,37 +7526,38 @@ a.th {
 .mainWrapper .negative .view-id-homepage.view-display-id-block_2 h5 {
   margin-bottom: 0px;
   padding-bottom: 0px;
+  font-size: 1.2em;
 }
-/* line 36, ../scss/layout/_main.scss */
+/* line 37, ../scss/layout/_main.scss */
 .mainWrapper .negative .view-id-homepage.view-display-id-block_2 h5 a {
   color: #e24137;
 }
-/* line 38, ../scss/layout/_main.scss */
+/* line 39, ../scss/layout/_main.scss */
 .mainWrapper .negative .view-id-homepage.view-display-id-block_2 h5 a:hover {
   color: #701610;
 }
-/* line 43, ../scss/layout/_main.scss */
+/* line 44, ../scss/layout/_main.scss */
 .mainWrapper .negative .view-id-homepage.view-display-id-block_2 p {
   margin-bottom: 0px;
 }
-/* line 53, ../scss/layout/_main.scss */
+/* line 54, ../scss/layout/_main.scss */
 .mainWrapper .topFacts .negative {
   color: #639DC8;
   text-align: center;
 }
-/* line 58, ../scss/layout/_main.scss */
+/* line 59, ../scss/layout/_main.scss */
 .mainWrapper .topFacts .negative h2, .mainWrapper .topFacts .negative h3 {
   color: #639DC8;
   font-size: 40px;
   margin: 0;
   padding: 0;
 }
-/* line 65, ../scss/layout/_main.scss */
+/* line 66, ../scss/layout/_main.scss */
 .mainWrapper .topFacts .negative p {
   margin-bottom: 0px;
   line-height: 25px;
 }
-/* line 70, ../scss/layout/_main.scss */
+/* line 71, ../scss/layout/_main.scss */
 .mainWrapper .topFacts .negative h6 {
   font-size: .5em;
   color: #797979;
@@ -7564,7 +7565,7 @@ a.th {
   margin-top: 10px;
 }
 
-/* line 86, ../scss/layout/_main.scss */
+/* line 87, ../scss/layout/_main.scss */
 .main {
   background: #ffffff;
   padding-top: 15px;
@@ -7572,12 +7573,12 @@ a.th {
   overflow: auto;
 }
 
-/* line 93, ../scss/layout/_main.scss */
+/* line 94, ../scss/layout/_main.scss */
 .l-sidebar-second {
   margin-top: 20px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 93, ../scss/layout/_main.scss */
+  /* line 94, ../scss/layout/_main.scss */
   .l-sidebar-second {
     margin-top: 0px;
   }
