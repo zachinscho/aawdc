@@ -41,3 +41,9 @@
 
   }
 }
+
+.calendar-calendar .week-view div.single-day .view-item .calendar,
+.calendar-calendar .day-view div.single-day .view-item .calendar {
+margin-left: 0px !important;
+width: auto !important;
+}
