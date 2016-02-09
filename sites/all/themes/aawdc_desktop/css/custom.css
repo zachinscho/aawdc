@@ -9905,10 +9905,3 @@ input[type=checkbox] {
   margin-right: 0px;
   margin-left: 0px;
 }
-
-/* line 45, ../scss/theme/_global.scss */
-.calendar-calendar .week-view div.single-day .view-item .calendar,
-.calendar-calendar .day-view div.single-day .view-item .calendar {
-  margin-left: 0px !important;
-  width: auto !important;
-}
