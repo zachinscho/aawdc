@@ -97,7 +97,7 @@
        	</div>
 	  </div>
 
-	  <div class="row">
+	  <div class="row homeColTwo">
 	  	<div class="large-9 columns">
 		  	<div class="negative">
 			  	<span class="smallLabel">Blog</span>
@@ -114,7 +114,7 @@
 
 	  </div>
 
-	  <div class="row">
+	  <div class="row homeColThree">
 	  	<div class="large-9 columns">
 		  	<div class="negative">
 	        	<span class="smallLabel">Success Stories</span>
