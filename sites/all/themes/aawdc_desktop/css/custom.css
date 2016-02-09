@@ -7396,41 +7396,53 @@ a.th {
 /* line 27, ../scss/layout/_header.scss */
 .imageHero {
   clear: both;
-  background-image: url(http://dev-aawdc.pantheon.io/sites/default/files/server.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 50px;
   padding-bottom: 50px;
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%;
+  position: relative;
+  overflow: hidden;
   background-position: center center;
 }
-/* line 38, ../scss/layout/_header.scss */
+@media only screen and (min-width: 768px) {
+  /* line 37, ../scss/layout/_header.scss */
+  .imageHero:after {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120px;
+    top: 0px;
+    left: -10%;
+    border-radius: 50%;
+    box-shadow: 0px -100px 0px 72px #fff;
+  }
+}
+/* line 50, ../scss/layout/_header.scss */
 .imageHero h1 {
   color: #ffffff;
   text-transform: uppercase;
   line-height: 30px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 38, ../scss/layout/_header.scss */
+  /* line 50, ../scss/layout/_header.scss */
   .imageHero h1 {
     font-size: 78px;
     line-height: 60px;
   }
 }
 
-/* line 51, ../scss/layout/_header.scss */
+/* line 63, ../scss/layout/_header.scss */
 .calloutTryp {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 55, ../scss/layout/_header.scss */
+/* line 67, ../scss/layout/_header.scss */
 .calloutTryp h3 {
   color: #797979;
   line-height: 27px;
 }
-/* line 61, ../scss/layout/_header.scss */
+/* line 73, ../scss/layout/_header.scss */
 .calloutTryp span {
   display: block;
   max-width: 200px;
@@ -7438,21 +7450,21 @@ a.th {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 67, ../scss/layout/_header.scss */
+/* line 79, ../scss/layout/_header.scss */
 .calloutTryp span.career {
   background-image: url(../images/step.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 73, ../scss/layout/_header.scss */
+/* line 85, ../scss/layout/_header.scss */
 .calloutTryp span.workforce {
   background-image: url(../images/buildings.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 79, ../scss/layout/_header.scss */
+/* line 91, ../scss/layout/_header.scss */
 .calloutTryp span.involved {
   background-image: url(../images/hand.png);
   background-size: 20%;
@@ -7460,14 +7472,14 @@ a.th {
   background-position: center center;
 }
 
-/* line 88, ../scss/layout/_header.scss */
+/* line 100, ../scss/layout/_header.scss */
 .calloutHero {
   background: #797979;
   color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 93, ../scss/layout/_header.scss */
+/* line 105, ../scss/layout/_header.scss */
 .calloutHero p {
   margin: 0;
   padding: 0;
