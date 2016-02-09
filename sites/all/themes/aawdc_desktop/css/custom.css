@@ -9864,15 +9864,15 @@ input[type=checkbox] {
 }
 
 /* line 16, ../scss/theme/_global.scss */
-.view-calendar .calendar-calendar tr td.today {
+.view-events-calendar .calendar-calendar tr td.today {
   background: #b0d6cd;
 }
 /* line 20, ../scss/theme/_global.scss */
-.view-calendar .calendar-calendar th.days, .view-calendar .calendar-calendar td.days, .view-calendar .calendar-calendar .mini-day-off, .view-calendar .calendar-calendar .mini-day-on {
+.view-events-calendar .calendar-calendar th.days, .view-events-calendar .calendar-calendar td.days, .view-events-calendar .calendar-calendar .mini-day-off, .view-events-calendar .calendar-calendar .mini-day-on {
   padding: 4px;
 }
 /* line 24, ../scss/theme/_global.scss */
-.view-calendar .calendar-calendar th.days {
+.view-events-calendar .calendar-calendar th.days {
   background: #b0d6cd;
 }
 
