@@ -4,10 +4,37 @@
 	h2 {
 		font-size: 1.5em;
 	}
+
+
+}
+
+.l-sidebar-second {
+
+.block {
+	background: $white;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+	ul.menu {
+	margin: 0px;
+	padding: 0px;
+		li {
+			list-style-type: none;
+			border-bottom: 1px solid #ccc;
+			&:last-child {
+				border-bottom: none;
+			}
+			a {
+				display: block;
+				padding: 10px;
+				line-height: 16px;
+			}
+		}
+	}
 }
 
 .push-3 {
-	@media #{$small} { 
+	@media #{$small} {
 		border-left: 2px solid $blue;
 		padding-left: $YW_BasePaddingLarge;
 	}
@@ -16,7 +43,7 @@
 .large-3.pull-9.l-sidebar-first.columns.sidebar{
 	border-top: 2px solid $blue;
 	padding-top: $YW_BasePaddingLarge;
-		@media #{$small} { 
+		@media #{$small} {
 			border-top:none;
 			padding-top: 0px;
 			width:22%;

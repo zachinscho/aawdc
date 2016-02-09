@@ -7,3 +7,45 @@
     color: $black;
   }
 }
+
+// Mini Calendar
+.view-calendar {
+
+  .calendar-calendar {
+
+    tr td.today {
+      background: #b0d6cd;
+    }
+
+    th.days, td.days, .mini-day-off, .mini-day-on {
+      padding: 4px;
+    }
+
+    th.days {
+      background: #b0d6cd;
+    }
+
+  }
+}
+
+.view .date-nav-wrapper {
+  .date-nav {
+    height: 30px !important;
+  }
+  .date-heading h3 {
+    font-size: 14px !important;
+  }
+
+  .date-prev, .date-next {
+    padding-right: 0px;
+    padding-left: 0px;
+      a {
+        display: block;
+        width: 30px;
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 0px;
+      }
+
+  }
+}

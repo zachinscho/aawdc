@@ -27,6 +27,11 @@
 		li {
 			list-style-type: none;
 			margin-left: 0px;
+			a {
+				&:hover {
+					color: #000;
+				}
+			}
 		}
 	}
 	.block-menu-menu-stay-in-touch {

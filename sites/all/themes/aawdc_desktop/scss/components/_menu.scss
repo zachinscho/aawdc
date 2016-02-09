@@ -70,7 +70,7 @@
 					display: block;
 					padding: 20px;
 					&:hover {
-						background: darken($dkTan, 5%);
+						//background: darken($dkTan, 5%);
 					}
 				}
 				ul {
@@ -83,7 +83,7 @@
 						a {
 							padding: 10px;
 							&:hover {
-								background: lighten($dkTan, 5%);
+								background: lighten($dkTan, 15%);
 							}
 						}
 					}

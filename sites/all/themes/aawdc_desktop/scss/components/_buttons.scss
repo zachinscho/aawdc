@@ -6,7 +6,7 @@
 .button, .form-submit {
 	background-color: $blue;
 	font-size: 1em;
-	color: $dkGray;
+	color: $white;
 	font-weight: 400;
 	border-radius: $global-radius;
 	text-transform: capitalize;
@@ -27,7 +27,8 @@
 }
 
 .breadcrumbs {
-	background: #ccc;
+	background: none;
+	padding-left: 0px;
 	border: none;
 }
 // reset margin

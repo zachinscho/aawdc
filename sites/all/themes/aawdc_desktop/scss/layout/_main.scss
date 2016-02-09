@@ -54,6 +54,7 @@
 			@extend .robotoCondensedRegular;
 			@extend .fontMedium;
 			color: $blue;
+			text-align: center;
 			h2, h3 {
 				color: $blue;
 				@extend .robotoCondensedRegular;
@@ -63,13 +64,14 @@
 			}
 			p {
 				margin-bottom: 0px;
-
+				line-height: 25px;
 			}
 
 			h6 {
 				font-size: .5em;
 				color: $dkGray;
 				text-transform: uppercase;
+				margin-top: 10px;
 			}
 		}
 	}
