@@ -7467,7 +7467,7 @@ a.th {
 /* line 91, ../scss/layout/_header.scss */
 .calloutTryp span.involved {
   background-image: url(../images/hand.png);
-  background-size: 20%;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: center center;
 }
