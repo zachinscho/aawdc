@@ -29,6 +29,15 @@
 				padding: 10px;
 				line-height: 16px;
 			}
+			ul {
+				li {
+				border-top: 1px solid #ccc;
+				border-bottom: none;
+				&:last-child {
+					border-bottom: none;
+				}
+				}
+			}
 		}
 	}
 }

@@ -7601,22 +7601,31 @@ a.th {
   padding: 10px;
   line-height: 16px;
 }
+/* line 33, ../scss/layout/_aside.scss */
+.l-sidebar-second ul.menu li ul li {
+  border-top: 1px solid #ccc;
+  border-bottom: none;
+}
+/* line 36, ../scss/layout/_aside.scss */
+.l-sidebar-second ul.menu li ul li:last-child {
+  border-bottom: none;
+}
 
 @media only screen and (min-width: 768px) {
-  /* line 36, ../scss/layout/_aside.scss */
+  /* line 45, ../scss/layout/_aside.scss */
   .push-3 {
     border-left: 2px solid #639DC8;
     padding-left: 20px;
   }
 }
 
-/* line 43, ../scss/layout/_aside.scss */
+/* line 52, ../scss/layout/_aside.scss */
 .large-3.pull-9.l-sidebar-first.columns.sidebar {
   border-top: 2px solid #639DC8;
   padding-top: 20px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 43, ../scss/layout/_aside.scss */
+  /* line 52, ../scss/layout/_aside.scss */
   .large-3.pull-9.l-sidebar-first.columns.sidebar {
     border-top: none;
     padding-top: 0px;
