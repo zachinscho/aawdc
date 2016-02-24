@@ -209,7 +209,7 @@ function aawdc_desktop_css_alter(&$css) {
 
 function aawdc_desktop_random_image() {
   $items = Array(
-  'http://live-aawdc.pantheon.io/sites/default/files/server.jpg',
+  'http://live-aawdc.pantheon.io/sites/default/files/server_0.jpg',
   'http://live-aawdc.pantheon.io/sites/default/files/default_images/switch_0.jpg',
   'http://live-aawdc.pantheon.io/sites/default/files/reception.jpg',
   'http://live-aawdc.pantheon.io/sites/default/files/hospital.jpg',

@@ -7420,6 +7420,7 @@ a.th {
 /* line 50, ../scss/layout/_header.scss */
 .imageHero h1 {
   color: #ffffff;
+  text-shadow: 0px 0px 4px #969696;
   text-transform: uppercase;
   line-height: 30px;
 }
@@ -7431,18 +7432,18 @@ a.th {
   }
 }
 
-/* line 63, ../scss/layout/_header.scss */
+/* line 64, ../scss/layout/_header.scss */
 .calloutTryp {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 67, ../scss/layout/_header.scss */
+/* line 68, ../scss/layout/_header.scss */
 .calloutTryp h3 {
   color: #797979;
   line-height: 27px;
 }
-/* line 73, ../scss/layout/_header.scss */
+/* line 74, ../scss/layout/_header.scss */
 .calloutTryp span {
   display: block;
   max-width: 200px;
@@ -7450,21 +7451,21 @@ a.th {
   margin-left: auto;
   margin-right: auto;
 }
-/* line 79, ../scss/layout/_header.scss */
+/* line 80, ../scss/layout/_header.scss */
 .calloutTryp span.career {
   background-image: url(../images/step.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 85, ../scss/layout/_header.scss */
+/* line 86, ../scss/layout/_header.scss */
 .calloutTryp span.workforce {
   background-image: url(../images/buildings.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 91, ../scss/layout/_header.scss */
+/* line 92, ../scss/layout/_header.scss */
 .calloutTryp span.involved {
   background-image: url(../images/hand.png);
   background-size: 40%;
@@ -7472,14 +7473,14 @@ a.th {
   background-position: center center;
 }
 
-/* line 100, ../scss/layout/_header.scss */
+/* line 101, ../scss/layout/_header.scss */
 .calloutHero {
   background: #797979;
   color: #ffffff;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-/* line 105, ../scss/layout/_header.scss */
+/* line 106, ../scss/layout/_header.scss */
 .calloutHero p {
   margin: 0;
   padding: 0;
@@ -7614,32 +7615,37 @@ a.th {
   display: block;
   padding: 10px;
   line-height: 16px;
+  color: #e24137;
 }
-/* line 33, ../scss/layout/_aside.scss */
+/* line 32, ../scss/layout/_aside.scss */
+.l-sidebar-second ul.menu li a:hover {
+  color: #701610;
+}
+/* line 37, ../scss/layout/_aside.scss */
 .l-sidebar-second ul.menu li ul li {
   border-top: 1px solid #ccc;
   border-bottom: none;
 }
-/* line 36, ../scss/layout/_aside.scss */
+/* line 40, ../scss/layout/_aside.scss */
 .l-sidebar-second ul.menu li ul li:last-child {
   border-bottom: none;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 45, ../scss/layout/_aside.scss */
+  /* line 49, ../scss/layout/_aside.scss */
   .push-3 {
     border-left: 2px solid #639DC8;
     padding-left: 20px;
   }
 }
 
-/* line 52, ../scss/layout/_aside.scss */
+/* line 56, ../scss/layout/_aside.scss */
 .large-3.pull-9.l-sidebar-first.columns.sidebar {
   border-top: 2px solid #639DC8;
   padding-top: 20px;
 }
 @media only screen and (min-width: 768px) {
-  /* line 52, ../scss/layout/_aside.scss */
+  /* line 56, ../scss/layout/_aside.scss */
   .large-3.pull-9.l-sidebar-first.columns.sidebar {
     border-top: none;
     padding-top: 0px;
@@ -7847,60 +7853,61 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: capitalize;
   font-family: "Roboto";
   font-weight: 500;
+  color: #e24137;
 }
 
-/* line 17, ../scss/components/_type.scss */
+/* line 18, ../scss/components/_type.scss */
 .robotoDarkest, .imageHero h1 {
   font-family: "Roboto";
   font-weight: 900;
 }
 
-/* line 21, ../scss/components/_type.scss */
+/* line 22, ../scss/components/_type.scss */
 .robotoCondensedBold, .topFooter h2, .smallLabel {
   font-family: "Roboto Condensed";
   font-weight: 700;
 }
 
-/* line 25, ../scss/components/_type.scss */
+/* line 26, ../scss/components/_type.scss */
 .robotoRegular, .mainWrapper .negative, .topFooter ul, .middleFooter .getInTouch a {
   font-family: "Roboto";
   font-weight: 500;
 }
 
-/* line 29, ../scss/components/_type.scss */
+/* line 30, ../scss/components/_type.scss */
 .robotoCondensedRegular, .calloutTryp h3, .calloutHero p, .mainWrapper .negative h2, .mainWrapper .negative h3, .mainWrapper .negative .view-id-homepage.view-display-id-block_2 h5, .mainWrapper .topFacts .negative, .mainWrapper .topFacts .negative h2, .mainWrapper .topFacts .negative h3 {
   font-family: "Roboto Condensed";
   font-weight: 400;
 }
 
-/* line 34, ../scss/components/_type.scss */
+/* line 35, ../scss/components/_type.scss */
 .fontRidicLarge {
   font-size: 78px;
 }
 
-/* line 35, ../scss/components/_type.scss */
+/* line 36, ../scss/components/_type.scss */
 .fontLarge, .calloutTryp h3 {
   font-size: 32px;
 }
 
-/* line 36, ../scss/components/_type.scss */
+/* line 37, ../scss/components/_type.scss */
 .fontMedium, .calloutHero p, .mainWrapper .negative h2, .mainWrapper .negative h3, .mainWrapper .topFacts .negative {
   font-size: 24px;
 }
 
-/* line 38, ../scss/components/_type.scss */
+/* line 39, ../scss/components/_type.scss */
 h1 {
   text-transform: uppercase;
 }
 
-/* line 42, ../scss/components/_type.scss */
+/* line 43, ../scss/components/_type.scss */
 body {
   font-size: 15px;
   font-family: inherit;
   font-weight: normal;
 }
 
-/* line 51, ../scss/components/_type.scss */
+/* line 52, ../scss/components/_type.scss */
 .smallLabel {
   text-transform: uppercase;
   font-size: 10px;

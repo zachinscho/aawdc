@@ -28,6 +28,10 @@
 				display: block;
 				padding: 10px;
 				line-height: 16px;
+				color: $red;
+				&:hover {
+					color: $dkRed;
+				}
 			}
 			ul {
 				li {

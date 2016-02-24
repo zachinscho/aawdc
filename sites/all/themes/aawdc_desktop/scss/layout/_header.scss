@@ -50,6 +50,7 @@
 	h1 {
 		color: $white;
 		@extend .robotoDarkest;
+		text-shadow: 0px 0px 4px rgba(150, 150, 150, 1);
 		text-transform: uppercase;
 		line-height: 30px;
 		@media #{$small} {
