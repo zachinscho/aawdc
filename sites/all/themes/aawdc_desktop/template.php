@@ -187,7 +187,11 @@ function aawdc_desktop_css_alter(&$css) {
   }
  }
 
- function aawdc_desktop_preprocess_page(&$vars) {
+ function aawdc_desktop_preprocess_page(&$vars, $variables) {
+  if (isset($variables['node']->type) && !empty($variables['node']->type) && ($variables['node']->type == 'new_you')){
+    // (underscores used in page__ )
+    $variables['theme_hook_suggestions'][] =  'page__' .  $variables['node']->type;
+  }
   $vars['heroImage'] = '';
   // Get the object and do some other checks based on what you need.
   if (($node = menu_get_object()) && $node->type) {
