@@ -38,6 +38,19 @@
     $(".menu-toggle").click(function () {
       $('#main-menu').toggleClass("show");
     });
+    
+    $("#main-menu li.has-dropdown a").click(function (e) {
+	    if ($(this).parent().hasClass("open")) {
+				$(this).unbind('click');
+		  } else if ($(this).parent().parent().parent().hasClass("open")) {
+			  $(this).unbind('click');
+		  } else {
+			  e.preventDefault();
+	    	$(this).parent().addClass("open");
+	    	$(this).next().css({ 'height':'auto', 'padding':'0 10px' });
+				$(this).unbind('click');
+	    }
+    });
 
     // If not mobile view, equal height the columns
     if ($(window).width() > 765) {

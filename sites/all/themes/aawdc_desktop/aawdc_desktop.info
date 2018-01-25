@@ -101,6 +101,9 @@ regions[HomepageFactOne] 	 = Homepage Fact One
 regions[HomepageFactTwo] 	 = Homepage Fact Two
 regions[HomepageFactThree] 	 = Homepage Fact Three
 regions[HomepageWhatsNew] 	 = Homepage Whats New
+regions[HomepageTitle] 	 = Homepage Title
+regions[HomepageURL] 	 = Homepage URL
+regions[HomepageImage] 	 = Homepage Image
 
 
 ; Various page elements output by the theme can be toggled on and off. The
